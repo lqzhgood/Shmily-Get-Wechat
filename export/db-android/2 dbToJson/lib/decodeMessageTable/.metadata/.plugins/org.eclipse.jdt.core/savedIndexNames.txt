@@ -1,0 +1,24 @@
+INDEX VERSION 1.130+C:\Users\Lenovo\Desktop\exportWx\.metadata\.plugins\org.eclipse.jdt.core
+280528468.index
+2447529457.index
+4139362408.index
+3271193799.index
+2148604510.index
+1132698010.index
+3817742339.index
+1830474472.index
+1572227210.index
+406237960.index
+970642553.index
+2263230683.index
+910092323.index
+2879932246.index
+1636039202.index
+2312854234.index
+1890934991.index
+2358296680.index
+1958530427.index
+278675831.index
+2926069626.index
+3351299441.index
+2418744271.index

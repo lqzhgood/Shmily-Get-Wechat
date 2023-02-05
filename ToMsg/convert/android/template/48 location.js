@@ -1,0 +1,33 @@
+let a = {
+    bizChatId: '-1',
+    bizChatUserId: null,
+    bizClientMsgId: null,
+    content:
+        '<msg><location x="26.845497131347656" y="112.6475830078125" scale="16" label="白沙广场(衡阳市雁峰区白沙大道28号)" poiname="[位置]" infourl="" maptype="0" /></msg>',
+    contentXml: {
+        x: '27.949604',
+        y: '113.166412',
+        scale: '19',
+        label: '芦淞区中心广场银馨家园(神农公园北)',
+        maptype: '0',
+        poiname: '彭厨(滨江南路店)',
+    },
+    createTime: '1549621785000',
+    flag: '0',
+    hasXml: [],
+    imgPath: null,
+    isSend: '1',
+    isShowTimer: null,
+    lvbuffer: '$~BLOB~lvbuffer$',
+    msgId: '8665',
+    msgSeq: '680518029',
+    msgSvrId: '9169641354289655470',
+    reserved:
+        'https://jiejing.qq.com/#pano=25021048131022142432700&heading=328&pitch=0&poi=detail&addr=1&minimap=0&region=0&search=0&direction=1&ref=wxshare',
+    status: '3',
+    talker: 'q******',
+    talkerId: '125',
+    transBrandWording: null,
+    transContent: null,
+    type: '48',
+};

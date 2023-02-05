@@ -1,0 +1,8 @@
+{
+    "search.exclude": {
+        "**/input**": true,
+        "**/dist**": true
+    },
+    "prettier.proseWrap": "never",
+    "cSpell.words": ["appmsg", "DIRPATH"]
+}

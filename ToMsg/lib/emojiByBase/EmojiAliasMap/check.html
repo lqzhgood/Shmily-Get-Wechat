@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>Document</title>
+    <style></style>
+</head>
+
+<body>
+
+    <div id="box"></div>
+
+    <script>
+        let emoji = [
+            {
+                "key": "/::)",
+                "alias": "微笑",
+                "f": "1.png",
+            },
+            {
+                "key": "/::~",
+                "alias": "撇嘴",
+                "f": "2.png",
+            },
+            {
+                "key": "/::B",
+                "alias": "色",
+                "f": "3.png",
+            },
+            {
+                "key": "/::|",
+                "alias": "发呆",
+                "f": "4.png",
+            },
+            {
+                "key": "/:8-)",
+                "alias": "得意",
+                "f": "5.png",
+            },
+            {
+                "key": "/::<",
+                "alias": "流泪",
+                "f": "6.png",
+            },
+            {
+                "key": "/::$",
+                "alias": "害羞",
+                "f": "7.png",
+            },
+            {
+                "key": "/::X",
+                "alias": "闭嘴",
+                "f": "8.png",
+            },
+            {
+                "key": "/::Z",
+                "alias": "睡",
+                "f": "9.png",
+            },
+            {
+                "key": "/::'(",
+                "alias": "大哭",
+                "f": "10.png",
+            },
+            {
+                "key": "/::-|",
+                "alias": "尴尬",
+                "f": "11.png",
+            },
+            {
+                "key": "/::@",
+                "alias": "发怒",
+                "f": "12.png",
+            },
+            {
+                "key": "/::P",
+                "alias": "调皮",
+                "f": "13.png",
+            },
+            {
+                "key": "/::D",
+                "alias": "呲牙",
+                "f": "14.png",
+            },
+            {
+                "key": "/::O",
+                "alias": "惊讶",
+                "f": "15.png",
+            },
+            {
+                "key": "/::(",
+                "alias": "难过",
+                "f": "16.png",
+            },
+            {
+                "key": "/::+",
+                "alias": "酷",
+                "f": "17.png",
+            },
+            {
+                "key": "/:--b",
+                "alias": "冷汗",
+                "f": "18.png",
+            },
+            {
+                "key": "/::Q",
+                "alias": "抓狂",
+                "f": "19.png",
+            },
+            {
+                "key": "/::T",
+                "alias": "吐",
+                "f": "20.png",
+            },
+            {
+                "key": "/:,@P",
+                "alias": "偷笑",
+                "f": "21.png",
+            },
+            {
+                "key": "/:,@-D",
+                "alias": "愉快",
+                "f": "22.png",
+            },
+            {
+                "key": "/::d",
+                "alias": "白眼",
+                "f": "23.png",
+            },
+            {
+                "key": "/:,@o",
+                "alias": "傲慢",
+                "f": "24.png",
+            },
+            {
+                "key": "/::g",
+                "alias": "饥饿",
+                "f": "25.png",
+            },
+            {
+                "key": "/:|-)",
+                "alias": "困",
+                "f": "26.png",
+            },
+            {
+                "key": "/::!",
+                "alias": "惊恐",
+                "f": "27.png",
+            },
+            {
+                "key": "/::L",
+                "alias": "流汗",
+                "f": "28.png",
+            },
+            {
+                "key": "/::>",
+                "alias": "憨笑",
+                "f": "29.png",
+            },
+            {
+                "key": "/::,@",
+                "alias": "悠闲",
+                "f": "30.png",
+            },
+            {
+                "key": "/:,@f",
+                "alias": "奋斗",
+                "f": "31.png",
+            },
+            {
+                "key": "/::-S",
+                "alias": "咒骂",
+                "f": "32.png",
+            },
+            {
+                "key": "/:?",
+                "alias": "疑问",
+                "f": "33.png",
+            },
+            {
+                "key": "/:,@x",
+                "alias": "嘘",
+                "f": "34.png",
+            },
+            {
+                "key": "/:,@@",
+                "alias": "晕",
+                "f": "35.png",
+            },
+            {
+                "key": "/::8",
+                "alias": "疯了",
+                "f": "36.png",
+            },
+            {
+                "key": "/:,@!",
+                "alias": "衰",
+                "f": "37.png",
+            },
+            {
+                "key": "/:!!!",
+                "alias": "骷髅",
+                "f": "38.png",
+            },
+            {
+                "key": "/:xx",
+                "alias": "敲打",
+                "f": "39.png",
+            },
+            {
+                "key": "/:bye",
+                "alias": "再见",
+                "f": "40.png",
+            },
+            {
+                "key": "/:wipe",
+                "alias": "擦汗",
+                "f": "41.png",
+            },
+            {
+                "key": "/:dig",
+                "alias": "抠鼻",
+                "f": "42.png",
+            },
+            {
+                "key": "/:handclap",
+                "alias": "鼓掌",
+                "f": "43.png",
+            },
+            {
+                "key": "/:&-(",
+                "alias": "糗大了",
+                "f": "44.png",
+            },
+            {
+                "key": "/:B-)",
+                "alias": "坏笑",
+                "f": "45.png",
+            },
+            {
+                "key": "/:<@",
+                "alias": "左哼哼",
+                "f": "46.png",
+            },
+            {
+                "key": "/:@>",
+                "alias": "右哼哼",
+                "f": "47.png",
+            },
+            {
+                "key": "/::-O",
+                "alias": "哈欠",
+                "f": "48.png",
+            },
+            {
+                "key": "/:>-|",
+                "alias": "鄙视",
+                "f": "49.png",
+            },
+            {
+                "key": "/:P-(",
+                "alias": "委屈",
+                "f": "50.png",
+            },
+            {
+                "key": "/::'|",
+                "alias": "快哭了",
+                "f": "51.png",
+            },
+            {
+                "key": "/:X-)",
+                "alias": "阴险",
+                "f": "52.png",
+            },
+            {
+                "key": "/::*",
+                "alias": "亲亲",
+                "f": "53.png",
+            },
+            {
+                "key": "/:@x",
+                "alias": "吓",
+                "f": "54.png",
+            },
+            {
+                "key": "/:8*",
+                "alias": "可怜",
+                "f": "55.png",
+            },
+            {
+                "key": "/:pd",
+                "alias": "菜刀",
+                "f": "56.png",
+            },
+            {
+                "key": "/:<W>",
+                "alias": "西瓜",
+                "f": "57.png",
+            },
+            {
+                "key": "/:beer",
+                "alias": "啤酒",
+                "f": "58.png",
+            },
+            {
+                "key": "/:basketb",
+                "alias": "篮球",
+                "f": "59.png",
+            },
+            {
+                "key": "/:oo",
+                "alias": "乒乓",
+                "f": "60.png",
+            },
+            {
+                "key": "/:coffee",
+                "alias": "咖啡",
+                "f": "61.png",
+            },
+            {
+                "key": "/:eat",
+                "alias": "饭",
+                "f": "62.png",
+            },
+            {
+                "key": "/:pig",
+                "alias": "猪头",
+                "f": "63.png",
+            },
+            {
+                "key": "/:rose",
+                "alias": "玫瑰",
+                "f": "64.png",
+            },
+            {
+                "key": "/:fade",
+                "alias": "凋谢",
+                "f": "65.png",
+            },
+            {
+                "key": "/:showlove",
+                "alias": "嘴唇",
+                "f": "66.png",
+            },
+            {
+                "key": "/:heart",
+                "alias": "爱心",
+                "f": "67.png",
+            },
+            {
+                "key": "/:break",
+                "alias": "心碎",
+                "f": "68.png",
+            },
+            {
+                "key": "/:cake",
+                "alias": "蛋糕",
+                "f": "69.png",
+            },
+            {
+                "key": "/:li",
+                "alias": "闪电",
+                "f": "70.png",
+            },
+            {
+                "key": "/:bome",
+                "alias": "炸弹",
+                "f": "71.png",
+            },
+            {
+                "key": "/:kn",
+                "alias": "刀",
+                "f": "72.png",
+            },
+            {
+                "key": "/:footb",
+                "alias": "足球",
+                "f": "73.png",
+            },
+            {
+                "key": "/:ladybug",
+                "alias": "瓢虫",
+                "f": "74.png",
+            },
+            {
+                "key": "/:shit",
+                "alias": "便便",
+                "f": "75.png",
+            },
+            {
+                "key": "/:moon",
+                "alias": "月亮",
+                "f": "76.png",
+            },
+            {
+                "key": "/:sun",
+                "alias": "太阳",
+                "f": "77.png",
+            },
+            {
+                "key": "/:gift",
+                "alias": "礼物",
+                "f": "78.png",
+            },
+            {
+                "key": "/:hug",
+                "alias": "拥抱",
+                "f": "79.png",
+            },
+            {
+                "key": "/:strong",
+                "alias": "强",
+                "f": "80.png",
+            },
+            {
+                "key": "/:weak",
+                "alias": "弱",
+                "f": "81.png",
+            },
+            {
+                "key": "/:share",
+                "alias": "握手",
+                "f": "82.png",
+            },
+            {
+                "key": "/:v",
+                "alias": "胜利",
+                "f": "83.png",
+            },
+            {
+                "key": "/:@)",
+                "alias": "抱拳",
+                "f": "84.png",
+            },
+            {
+                "key": "/:jj",
+                "alias": "勾引",
+                "f": "85.png",
+            },
+            {
+                "key": "/:@@",
+                "alias": "拳头",
+                "f": "86.png",
+            },
+            {
+                "key": "/:bad",
+                "alias": "差劲",
+                "f": "87.png",
+            },
+            {
+                "key": "/:lvu",
+                "alias": "爱你",
+                "f": "88.png",
+            },
+            {
+                "key": "/:no",
+                "alias": "NO",
+                "f": "89.png",
+            },
+            {
+                "key": "/:ok",
+                "alias": "OK",
+                "f": "90.png",
+            },
+            {
+                "key": "/:love",
+                "alias": "爱情",
+                "f": "91.png",
+            },
+            {
+                "key": "/:<L>",
+                "alias": "飞吻",
+                "f": "92.png",
+            },
+            {
+                "key": "/:jump",
+                "alias": "跳跳",
+                "f": "93.png",
+            },
+            {
+                "key": "/:shake",
+                "alias": "发抖",
+                "f": "94.png",
+            },
+            {
+                "key": "/:<O>",
+                "alias": "怄火",
+                "f": "95.png",
+            },
+            {
+                "key": "/:circle",
+                "alias": "转圈",
+                "f": "96.png",
+            },
+            {
+                "key": "/:kotow",
+                "alias": "磕头",
+                "f": "97.png",
+            },
+            {
+                "key": "/:turn",
+                "alias": "回头",
+                "f": "98.png",
+            },
+            {
+                "key": "/:skip",
+                "alias": "跳绳",
+                "f": "99.png",
+            },
+            {
+                "key": "/:oY",
+                "alias": "投降",
+                "f": "100.png",
+            },
+            {
+                "key": "/:#-0",
+                "alias": "激动",
+                "f": "101.png",
+            },
+            {
+                "key": "/:hiphot",
+                "alias": "乱舞",
+                "f": "102.png",
+            },
+            {
+                "key": "/:kiss",
+                "alias": "献吻",
+                "f": "103.png",
+            },
+            {
+                "key": "/:<&",
+                "alias": "左太极",
+                "f": "104.png",
+            },
+            {
+                "key": "/:&>",
+                "alias": "右太极",
+                "f": "105.png",
+            },
+        ];
+
+        document.getElementById("box").innerHTML = emoji.map(v => {
+
+            return `<div>
+                <h4>${v.alias}</h4>
+                <img src="${v.f}" />
+                </div>
+                `;
+        });
+    </script>
+
+</body>
+
+</html>

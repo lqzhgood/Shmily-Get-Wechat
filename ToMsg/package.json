@@ -1,0 +1,49 @@
+{
+    "name": "export",
+    "version": "1.0.0",
+    "description": "`/data/data/com.tencent.mm/MicroMsg`",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib",
+        "test": "test"
+    },
+    "dependencies": {
+        "aes-js": "^3.1.2",
+        "axios": "^0.26.1",
+        "cheerio": "^1.0.0-rc.5",
+        "dayjs": "^1.11.1",
+        "file-type": "^16.5.3",
+        "fs-extra": "^10.1.0",
+        "lodash": "^4.17.21",
+        "md5-file": "^5.0.0",
+        "music-metadata": "^7.12.3",
+        "slk-to-mp3": "^1.0.0",
+        "xml2json": "^0.12.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "md5face": "node ./lib/face/md5face.js",
+        "emojiByBase": "node ./lib/emojiByBase/index.js",
+        "emojiByWx": "node ./lib/emojiByWx/index.js",
+        "emojiByQQ": "node ./lib/emojiByQQ/index.js",
+        "appInfo": "node ./lib/appInfo/index.js",
+        "md5assets": "node ./lib/assetsFileMd5.js",
+        "md5local": "node ./lib/localFileMd5.js",
+        "wxbackup": "node index.js wxbackup",
+        "android": "node --inspect index.js android",
+        "android-dev": "nodemon --inspect index.js android"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "nodemonConfig": {
+        "ignore": [
+            "input/*",
+            "dist/*"
+        ]
+    },
+    "engines": {
+        "npm": ">=7.0.0",
+        "node": ">=16.0.0"
+    }
+}
