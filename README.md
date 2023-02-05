@@ -14,6 +14,7 @@
                 解密数据库为可读的数据库, 参考 `./readme.md`
             -   2 dbToJson
                 将解密的数据库导出为 json 数据 参考 `./readme.md`
+        -   db-iOS 待补充
     - ToMsg 转换为 `Shmily-Msg` 格式
 ```
 
