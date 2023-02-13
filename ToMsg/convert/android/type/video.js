@@ -11,7 +11,7 @@ const WEB_DIR = `${FILE_WEB_PUBLIC_DIR}/${SOURCE_DICT_DB_ANDROID}`;
 
 const DB_VIDE = require('../../../input/JSON/android/videoinfo2');
 
-async function video(v) {
+async function video(v, merger) {
     const { imgPath, content } = v;
     const DIR_TYPE = 'video';
 
@@ -22,7 +22,7 @@ async function video(v) {
     };
 
     const db = DB_VIDE.find(d => v.msgSvrId === d.msgsvrid);
-
+    if (db) merger.key.db = db;
     if (db && db.videolength > 0) {
         res.time = db.videolength;
     } else {

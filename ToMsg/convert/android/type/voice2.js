@@ -15,9 +15,10 @@ const WEB_DIR = `${FILE_WEB_PUBLIC_DIR}/${SOURCE_DICT_DB_ANDROID}`;
 
 const DB_VOICE = require('../../../input/JSON/android/voiceinfo.json');
 
-async function voice2(v) {
+const DIR_TYPE = 'voice2';
+
+async function voice2(v, merger) {
     const { imgPath, content } = v;
-    const DIR_TYPE = 'voice2';
 
     const code = imgPath;
     const p1 = code.substring(0, 2);
@@ -36,6 +37,7 @@ async function voice2(v) {
 
     // 语音长度
     const db = DB_VOICE.find(d => v.msgSvrId === d.MsgId);
+    if (db) merger.key.db = db;
     if (db && db.VoiceLength > 0) {
         res.time = db.VoiceLength;
     } else {

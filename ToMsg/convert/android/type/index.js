@@ -31,9 +31,10 @@ const TYPE_LOCATION = require('./location.js');
  * @param {*} type typeMap中的类型
  * @param {*} v 深拷贝的 msg, 上面修改不会影响到 msg
  * @param {*} ov 原始 msg 避免上面的对 v 进行操作后影响 用于只读
+ * @param {*} merger 合并到 $Wechat 的属性
  * @return {*}
  */
-async function handleType(type, v, ov) {
+async function handleType(type, v, ov, merger) {
     const msg = _.get(v, 'content.msg', {});
     const appmsg = _.get(v, 'content.msg.appmsg', {});
     const { title, des, thumburl, md5 } = appmsg;
@@ -60,7 +61,7 @@ async function handleType(type, v, ov) {
                 html: TYPE_TEXT(v.content),
             };
         case TYPE_DICT.图片:
-            v.$imgUrl = await TYPE_IMAGE2(v);
+            merger.data.$imgUrl = await TYPE_IMAGE2(v, merger);
             return {
                 html: `[图] ${v.imgPath}`,
             };
@@ -69,8 +70,8 @@ async function handleType(type, v, ov) {
             //     mp3Url: undefined,
             //     time: -1,
             // };
-            const mp3Info = await TYPE_VOICE2(v);
-            v.$mp3Info = mp3Info;
+            const mp3Info = await TYPE_VOICE2(v, merger);
+            merger.data.$mp3Info = mp3Info;
             return {
                 html: `${mp3Info.time / 1000}s ${mp3Info.mp3Url}`,
             };
@@ -81,7 +82,8 @@ async function handleType(type, v, ov) {
                 html: '撤回',
             };
         case TYPE_DICT.名片: {
-            v.$url_cover = await TYPE_USER_CARD(msg, v);
+            merger.data.$url_cover = await TYPE_USER_CARD(msg, v);
+            merger.data.msg = msg;
             return {
                 html: `<h4>${_.get(msg, 'nickname')}</h4><p>${_.get(msg, 'sign')}</p><p>${_.get(msg, 'alias')}</p>`,
             };
@@ -92,17 +94,17 @@ async function handleType(type, v, ov) {
             //     thumbnail: undefined,
             //     time: -1,
             // };
-            const mp4Info = await TYPE_VIDEO(v);
-            v.$mp4info = mp4Info;
+            const mp4Info = await TYPE_VIDEO(v, merger);
+            merger.data.$mp4info = mp4Info;
             return {
                 html: `[视频] ${v.imgPath}`,
             };
         }
         case TYPE_DICT._自定义表情_微信买的表情: {
-            const { webUrl, desc, packName } = await TYPE_EMOJI_STORE(v);
-            v.$packName = packName;
-            v.$desc = desc;
-            v.$url_emoji = webUrl;
+            const { webUrl, desc, packName } = await TYPE_EMOJI_STORE(v, merger);
+            merger.data.$packName = packName;
+            merger.data.$desc = desc;
+            merger.data.$url_emoji = webUrl;
             return {
                 type: TYPE_DICT.自定义表情,
                 html: `[${packName}-${desc}]`,
@@ -111,20 +113,21 @@ async function handleType(type, v, ov) {
         case TYPE_DICT.位置: {
             const location = TYPE_LOCATION(msg);
             const { label, x, y } = location;
-            v.$location = location;
+            merger.data.$location = location;
             return {
                 html: `<h4>${label}</h4><p>${x} ${y}</p>`,
             };
         }
         case TYPE_DICT.视频通话: {
-            const { voipText, voipDes } = await TYPE_VOIP(v);
-            v.$text_voip = voipText;
-            v.$des_voip = voipDes;
+            const { voipText, voipDes } = await TYPE_VOIP(v, merger);
+            merger.data.$text_voip = voipText;
+            merger.data.$des_voip = voipDes;
             return {
-                html: v.$text_voip,
+                html: voipText,
             };
         }
         case TYPE_DICT.系统消息: {
+            merger.data.content = v.content;
             const html = await TYPE_SYSTEM(v, ov);
             return {
                 html,
@@ -135,68 +138,86 @@ async function handleType(type, v, ov) {
 
         case TYPE_DICT._含链接消息:
             if (title !== des) throw new Error(`含链接消息 title des 不相同 ${title} ${des}`);
-            v.content = title;
             return {
                 type: TYPE_DICT.消息,
-                html: v.content,
+                html: title,
             };
         case TYPE_DICT.微信运动:
+            merger.data.appmsg = appmsg;
+            merger.data.appinfo = v.content.msg.appinfo;
             return {
                 html: `<h4>${title}</h4><p>${des}</p>`,
             };
         case TYPE_DICT.分享: {
-            v.$linkIcon = await TYPE_SHARE(v);
+            merger.data.appmsg = appmsg;
+            merger.data.appinfo = v.content.msg.appinfo;
+            merger.data.$linkIcon = await TYPE_SHARE(v);
             return {
                 html: `<h4>${title}</h4><p>${des}</p>`,
             };
         }
         case TYPE_DICT.文件: {
-            v.$url_file = await TYPE_FILE(v);
+            merger.data.appmsg = appmsg;
+            merger.data.appinfo = v.content.msg.appinfo;
+            merger.data.$url_file = await TYPE_FILE(v, merger);
             return {
                 html: title,
             };
         }
         case TYPE_DICT._自定义表情_非微信商店: {
-            const { webUrl, desc, packName } = await TYPE_EMOJI_SELF(v);
-            v.$packName = packName;
-            v.$desc = desc;
-            v.$url_emoji = webUrl;
+            const { webUrl, desc, packName } = await TYPE_EMOJI_SELF(v, merger);
+            merger.data.$packName = packName;
+            merger.data.$desc = desc;
+            merger.data.$url_emoji = webUrl;
             return {
                 type: TYPE_DICT.自定义表情,
                 html: `[${packName}-${desc}]`,
             };
         }
         case TYPE_DICT.位置共享:
+            merger.data.appmsg = appmsg;
             return {
                 html: title,
             };
         case TYPE_DICT.聊天记录:
-            v.$url_pre = WEB_DIR;
+            merger.data.appmsg = appmsg;
+            merger.data.msgId = v.msgId;
+            merger.data.$url_pre = WEB_DIR;
             return {
                 html: ov.content,
             };
 
         case TYPE_DICT.小程序: {
             const { cover, link } = await TYPE_APP(v);
-            v.$url_cover = cover;
-            v.$url_link = link;
+            merger.data.appmsg = appmsg;
+            merger.data.appinfo = v.content.msg.appinfo;
+            merger.data.$url_cover = cover;
+            merger.data.$url_link = link;
             return {
-                html: `<p>${_.get(appmsg, 'sourcedisplayname')}</p><h4>${title}</h4><p>${des}</p>`,
+                html: `<p>${
+                    _.get(appmsg, 'sourcedisplayname') || _.get(v, 'content.msg.appinfo.appname')
+                }</p><h4>${title}</h4><p>${des}</p>`,
             };
         }
         case TYPE_DICT.转账:
+            merger.data.appmsg = appmsg;
             return {
                 html: `<h4>${title}</h4><p>${des}</p>`,
             };
 
         case TYPE_DICT.红包: {
+            merger.data.appmsg = appmsg;
             const paySenderTitle = _.get(appmsg, 'wcpayinfo.sendertitle');
             return {
                 html: `<h4>${paySenderTitle}</h4>`,
             };
         }
         default:
-            throw new Error(`unknown Type ${JSON.stringify(v)}`);
+            console.error('未知类型 处理方式', type);
+            // throw new Error(`unknown Type ${JSON.stringify(v)}`);
+            return {
+                html: JSON.stringify(v, null, 4),
+            };
     }
 }
 

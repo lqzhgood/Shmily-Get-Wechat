@@ -17,10 +17,11 @@ const findEmojiByQQ = require('../../../lib/emojiByQQ/index.js');
 const FILE_DIR = path.join(FILE_DIR_OUT_DIR, SOURCE_DICT_DB_ANDROID);
 const WEB_DIR = `${FILE_WEB_PUBLIC_DIR}/${SOURCE_DICT_DB_ANDROID}`;
 
-async function emoji(v) {
+const DIR_TYPE = 'emoji';
+
+async function emoji(v, merger) {
     const { imgPath } = v;
 
-    const DIR_TYPE = 'emoji';
     const assets_dir = path.join(ASSETS_ROOT_DIR, DIR_TYPE);
 
     // 分割解析 XML
@@ -45,6 +46,8 @@ async function emoji(v) {
 
     const f = findArrInArr(EMOJI_INFO, md5s, 'md5');
     if (f) {
+        merger.key.db_wx = f;
+
         desc = f.desc || desc;
         packName = f.packName || packName;
     }
@@ -89,7 +92,10 @@ async function emoji(v) {
     }
 
     const findByQQ = findEmojiByQQ(md5s);
-    if (findByQQ) console.log('findByQQ 这都能匹配到!!! 赶紧去 Github 催作者补全这段代码吧', findByQQ);
+    if (findByQQ) {
+        merger.key.db_qq = f;
+        console.log('findByQQ 这都能匹配到!!! 赶紧去 Github 催作者补全这段代码吧', findByQQ);
+    }
 
     return { webUrl, desc, packName };
 }

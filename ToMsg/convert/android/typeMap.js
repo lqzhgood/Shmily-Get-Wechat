@@ -94,7 +94,10 @@ function typeMap(v) {
 
         default:
             console.warn(`unknown Type`, v.type, v);
-            throw new Error(`unknown Type`);
+            // throw new Error(`unknown Type`);
+            return {
+                type: TYPE_DICT.未知类型,
+            };
     }
 }
 
@@ -153,7 +156,10 @@ function linkTypeMap(v) {
         //     };
         default:
             console.warn(`unknown Type By 49`, linkType, v);
-            throw new Error(`unknown Type By 49`);
+            // throw new Error(`unknown Type By 49`);
+            return {
+                type: TYPE_DICT.未知类型,
+            };
     }
 }
 

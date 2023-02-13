@@ -28,8 +28,9 @@ function voipText(v) {
     return `${type}${action}`;
 }
 
-function getDesByLvBuff(v) {
+function getDesByLvBuff(v, merger) {
     const arr = getLvBuffer(v.msgId);
+    merger.key.lvBufferToUtf8 = Buffer.from(arr).toString('utf-8');
     const fDataIndex = _.findIndex(arr, k => k !== 0);
     const eDataIndex = _.findLastIndex(arr, k => k !== 0);
     const res = arr.splice(fDataIndex, eDataIndex - fDataIndex + 1);
@@ -39,10 +40,10 @@ function getDesByLvBuff(v) {
     return lvDes;
 }
 
-function voip(v) {
+function voip(v, merger) {
     return {
         voipText: voipText(v),
-        voipDes: getDesByLvBuff(v),
+        voipDes: getDesByLvBuff(v, merger),
     };
 }
 

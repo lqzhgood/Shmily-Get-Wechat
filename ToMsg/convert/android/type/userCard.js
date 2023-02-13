@@ -9,8 +9,9 @@ const { matchFile } = require('../../utils/matchFile.js');
 const FILE_DIR = path.join(FILE_DIR_OUT_DIR, SOURCE_DICT_DB_ANDROID);
 const WEB_DIR = `${FILE_WEB_PUBLIC_DIR}/${SOURCE_DICT_DB_ANDROID}`;
 
+const DIR_TYPE = 'userCard';
+
 async function userCard(msg, v) {
-    const DIR_TYPE = 'userCard';
     const urls = [_.get(msg, 'brandIconUrl'), _.get(msg, 'bigheadimgurl'), _.get(msg, 'smallheadimgurl')];
     const res = await matchFile(v, `${WEB_DIR}/${DIR_TYPE}`, `${FILE_DIR}/${DIR_TYPE}`, urls, []);
     return res;

@@ -11,14 +11,14 @@ const { FILE_WEB_PUBLIC_DIR, ASSETS_ROOT_DIR, ImgInfo2SelectIndex, FILE_DIR_OUT_
 const FILE_DIR = path.join(FILE_DIR_OUT_DIR, SOURCE_DICT_DB_ANDROID);
 const WEB_DIR = `${FILE_WEB_PUBLIC_DIR}/${SOURCE_DICT_DB_ANDROID}`;
 
+const DIR_TYPE = 'image2';
+
 //  "${x}.temp.jpg"
 //  "th_${x}"
 //  "th_${x}hd"
 
 // 全部是 THUMBNAIL_DIRPATH://th 开头
-async function image2(v) {
-    const DIR_TYPE = 'image2';
-
+async function image2(v, merger) {
     const { imgPath, msgSvrId } = v;
     let res = [];
 
@@ -30,6 +30,8 @@ async function image2(v) {
     );
 
     if (findInDbArrUniq.length > 0) {
+        merger.key.db = findInDbArrUniq;
+
         let index = 0;
 
         if (findInDbArrUniq.length >= 2) {

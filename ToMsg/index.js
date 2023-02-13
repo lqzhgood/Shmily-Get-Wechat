@@ -5,7 +5,7 @@ const { execSync } = require('child_process');
 const { getMsgJson } = require('./convert/utils/index.js');
 const { clearTmp } = require('./convert/utils/downFile');
 
-const { FILE_DIR_OUT_DIR,leftNum } = require('./config.js');
+const { FILE_DIR_OUT_DIR, leftNum } = require('./config.js');
 
 const db_type = process.argv[2];
 console.log(`${db_type}`);

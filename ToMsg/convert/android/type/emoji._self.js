@@ -16,7 +16,7 @@ const DIR_TYPE = 'emoji';
 
 const { thSrcHandle } = require('../../utils/type.js');
 
-async function emoji_self(v) {
+async function emoji_self(v, merger) {
     let webUrl;
     let desc = '未知';
     let packName = '其他';
@@ -35,6 +35,8 @@ async function emoji_self(v) {
     const f = findArrInArr(EMOJI_INFO, md5s, 'md5');
 
     if (f) {
+        merger.key.db_wx = f;
+
         desc = f.desc || desc;
         packName = f.packName || packName;
     }
@@ -48,7 +50,10 @@ async function emoji_self(v) {
     }
 
     const findByQQ = findEmojiByQQ(md5s);
-    if (findByQQ) console.log('findByQQ 这都能匹配到!!! 赶紧去 Github 催作者补全这段代码吧', findByQQ);
+    if (findByQQ) {
+        merger.key.db_qq = f;
+        console.log('findByQQ 这都能匹配到!!! 赶紧去 Github 催作者补全这段代码吧', findByQQ);
+    }
 
     return { webUrl, desc, packName };
 }

@@ -1,4 +1,4 @@
-// _.get(v, '$Wechat.webData.contentXml.msg.img')
+// _.get(v, '$Wechat.data.contentXml.msg.img')
 
 let a = {
     bizChatId: '-1',

@@ -8,6 +8,8 @@ const typeHandle = require('./type/index.js');
 const { htmlToText } = require('../utils/type.js');
 const { deepDiff } = require('../../utils/index.js');
 
+const { TYPE_DICT } = require('../dictMap.js');
+
 async function androidToMsg(_res) {
     const arr = [];
 
@@ -25,13 +27,27 @@ async function androidToMsg(_res) {
     for (let i = 0; i < res.length; i++) {
         const v = res[i];
         // console.log('v', v);
+        // 原始数据
         const original = _.cloneDeep(v);
+        // 最终解密数据
         const preData = _.cloneDeep(v);
 
         // 这里还会对资源进行下载 修改 HTML 中的路径未下载的本地路径
         const { type: _typePre } = typeMap(preData);
         if (!_typePre) throw new Error('unknown type');
-        const { type: _typeUnity, html } = await typeHandle(_typePre, preData, original);
+
+        // 最终会合并到 $Wechat 的数据 贯穿整个处理流程
+        const merger = {
+            raw: original, // 原始数据
+            key: {}, // 过程数据
+            res: preData, // 最终数据
+            data: {}, // 前端使用到的数据
+        };
+
+        // debug
+        // if (_typePre !== TYPE_DICT.系统消息) continue;
+
+        const { type: _typeUnity, html } = await typeHandle(_typePre, preData, original, merger);
 
         const type = _typeUnity || _typePre;
         if (!type) throw new Error('unknown type');
@@ -77,16 +93,15 @@ async function androidToMsg(_res) {
             time: dayjs(t).format('HH:mm:ss'),
             ms: t,
 
-            // 都在 webData 中处理 html 样式太多 挪到前端拼装 仅用来搜索
+            // 都在 data 中处理 html 样式太多 挪到前端拼装 仅用来搜索
             content: htmlToText(html),
             html: html.replace(/(\r\n|\r|\n)/gim, '<br/>'),
 
             msAccuracy: true,
 
             $Wechat: {
-                webData: preData,
-                original,
                 // diff: deepDiff(original, preData),
+                ...merger,
             },
         };
         if (config.isFromOtherAccount) {

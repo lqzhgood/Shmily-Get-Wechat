@@ -26,6 +26,8 @@ module.exports = {
         '自定义表情',
         '_自定义表情_微信买的表情',
         '_自定义表情_非微信商店',
+
+        '未知类型',
     ].reduce((pre, cV) => {
         pre[cV] = cV;
         return pre;

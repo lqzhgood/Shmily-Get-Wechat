@@ -14,13 +14,15 @@ const { matchFile } = require('../../utils/matchFile.js');
 
 const DIR_TYPE = 'file';
 
-async function file(v) {
+async function file(v, merger) {
     const appmsg = _.get(v, 'content.msg.appmsg', {});
     const { title, md5 } = appmsg;
 
     const findInAppAttach = APP_ATTACH.find(a => v.msgId == a.msgInfoId);
     let webUrl;
     if (findInAppAttach) {
+        merger.key.db = findInAppAttach;
+
         v.findInAppAttach = findInAppAttach;
         const fileName = findInAppAttach.fileFullPath.split('/').slice(-1)[0];
         const sFile = path.join(ASSETS_ROOT_DIR, '_file', fileName);
