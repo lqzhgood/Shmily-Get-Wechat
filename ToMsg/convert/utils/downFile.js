@@ -97,7 +97,11 @@ function cleanEmptyFoldersRecursively(folder) {
 }
 
 function clearTmp() {
-    fs.removeSync(path.join(__dirname, '../../dist/tmp'));
+    try {
+        fs.removeSync(path.join(__dirname, '../../dist/tmp'));
+    } catch (error) {
+        console.log('clear error', error.message);
+    }
 }
 
 module.exports = {

@@ -29,7 +29,6 @@
         "appInfo": "node ./lib/appInfo/index.js",
         "md5assets": "node ./lib/assetsFileMd5.js",
         "md5local": "node ./lib/localFileMd5.js",
-        "wxbackup": "node index.js wxbackup",
         "android": "node --inspect index.js android",
         "android-dev": "nodemon --inspect index.js android"
     },

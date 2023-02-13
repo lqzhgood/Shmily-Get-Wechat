@@ -1,5 +1,4 @@
 module.exports = {
-    SOURCE_DICT_WXBACKUP: 'wxbackup',
     SOURCE_DICT_DB_ANDROID: 'android',
     EXT_IMAGE: ['.jpg', '.jpeg', '.gif', '.png', '.webp'],
     // _开头是需要处理合并为上面类型的

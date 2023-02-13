@@ -24,7 +24,7 @@ function typeMap(v) {
                 type: TYPE_DICT.语音,
             };
         // case "38":
-        //     // 未处理  没有这类消息的样本
+        // 未处理  没有这类消息的样本
         //     return {
         //         type: TYPE_DICT.撤回,
         //     };

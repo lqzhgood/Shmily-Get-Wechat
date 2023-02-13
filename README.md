@@ -31,3 +31,11 @@
 
 由于迭代了很多次, 代码很乱.
 特别是 `ToMsg` 里, 还想大家一起贡献 Emoji , 这样就可以补全腾讯不给下载的表情. 但是没做好
+
+## 感谢
+
+http://lqzhgood.github.io/Shmily/guide/other/thanks.html
+
+## 捐赠
+
+点击链接 http://lqzhgood.github.io/Shmily/guide/other/donation.html 看世界上最可爱的动物
