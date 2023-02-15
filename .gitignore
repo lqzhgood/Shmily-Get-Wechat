@@ -107,3 +107,4 @@ input
 /ToMsg/config.js
 /ToMsg/input/
 /ToMsg/dist1/
+!/ToMsg/lib/emojiByBase/dist/

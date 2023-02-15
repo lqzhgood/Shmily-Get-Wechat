@@ -1,0 +1,2868 @@
+[
+    {
+        "file": "smileys/0.png",
+        "key": [
+            "/::)",
+            "/微笑",
+            "[微笑]",
+            "[Smile]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0029",
+            "\u002f\u5fae\u7b11",
+            "\u005b\u5fae\u7b11\u005d",
+            "\u005b\u0053\u006d\u0069\u006c\u0065\u005d"
+        ],
+        "alias": "微笑",
+        "webFile": "QQ经典/0.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/1.png",
+        "key": [
+            "/::~",
+            "/撇嘴",
+            "[撇嘴]",
+            "[Grimace]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u007e",
+            "\u002f\u6487\u5634",
+            "\u005b\u6487\u5634\u005d",
+            "\u005b\u0047\u0072\u0069\u006d\u0061\u0063\u0065\u005d"
+        ],
+        "alias": "撇嘴",
+        "webFile": "QQ经典/1.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/2.png",
+        "key": [
+            "/::B",
+            "/色",
+            "[色]",
+            "[Drool]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0042",
+            "\u002f\u8272",
+            "\u005b\u8272\u005d",
+            "\u005b\u0044\u0072\u006f\u006f\u006c\u005d"
+        ],
+        "alias": "色",
+        "webFile": "QQ经典/2.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/3.png",
+        "key": [
+            "/::|",
+            "/发呆",
+            "[发呆]",
+            "[發呆]",
+            "[Scowl]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u007c",
+            "\u002f\u53d1\u5446",
+            "\u005b\u53d1\u5446\u005d",
+            "\u005b\u767c\u5446\u005d",
+            "\u005b\u0053\u0063\u006f\u0077\u006c\u005d"
+        ],
+        "alias": "发呆",
+        "webFile": "QQ经典/3.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/4.png",
+        "key": [
+            "/:8-)",
+            "/得意",
+            "[得意]",
+            "[CoolGuy]",
+            "[Chill]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0038\u002d\u0029",
+            "\u002f\u5f97\u610f",
+            "\u005b\u5f97\u610f\u005d",
+            "\u005b\u0043\u006f\u006f\u006c\u0047\u0075\u0079\u005d",
+            "\u005b\u0043\u0068\u0069\u006c\u006c\u005d"
+        ],
+        "alias": "得意",
+        "webFile": "QQ经典/4.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/5.png",
+        "key": [
+            "/::<",
+            "/流泪",
+            "[流泪]",
+            "[流淚]",
+            "[Sob]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u003c",
+            "\u002f\u6d41\u6cea",
+            "\u005b\u6d41\u6cea\u005d",
+            "\u005b\u6d41\u6dda\u005d",
+            "\u005b\u0053\u006f\u0062\u005d"
+        ],
+        "alias": "流泪",
+        "webFile": "QQ经典/5.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/6.png",
+        "key": [
+            "/::$",
+            "/害羞",
+            "[害羞]",
+            "[Shy]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0024",
+            "\u002f\u5bb3\u7f9e",
+            "\u005b\u5bb3\u7f9e\u005d",
+            "\u005b\u0053\u0068\u0079\u005d"
+        ],
+        "alias": "害羞",
+        "webFile": "QQ经典/6.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/7.png",
+        "key": [
+            "/::X",
+            "/闭嘴",
+            "[闭嘴]",
+            "[閉嘴]",
+            "[Silent]",
+            "[Shutup]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0058",
+            "\u002f\u95ed\u5634",
+            "\u005b\u95ed\u5634\u005d",
+            "\u005b\u9589\u5634\u005d",
+            "\u005b\u0053\u0069\u006c\u0065\u006e\u0074\u005d",
+            "\u005b\u0053\u0068\u0075\u0074\u0075\u0070\u005d"
+        ],
+        "alias": "闭嘴",
+        "webFile": "QQ经典/7.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/8.png",
+        "key": [
+            "/::Z",
+            "/睡",
+            "[睡]",
+            "[Sleep]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u005a",
+            "\u002f\u7761",
+            "\u005b\u7761\u005d",
+            "\u005b\u0053\u006c\u0065\u0065\u0070\u005d"
+        ],
+        "alias": "睡",
+        "webFile": "QQ经典/8.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/9.png",
+        "key": [
+            "/::'(",
+            "/大哭",
+            "[大哭]",
+            "[Cry]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0027\u0028",
+            "\u002f\u5927\u54ed",
+            "\u005b\u5927\u54ed\u005d",
+            "\u005b\u0043\u0072\u0079\u005d"
+        ],
+        "alias": "大哭",
+        "webFile": "QQ经典/9.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/10.png",
+        "key": [
+            "/::-|",
+            "/尴尬",
+            "[尴尬]",
+            "[尷尬]",
+            "[Awkward]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u002d\u007c",
+            "\u002f\u5c34\u5c2c",
+            "\u005b\u5c34\u5c2c\u005d",
+            "\u005b\u5c37\u5c2c\u005d",
+            "\u005b\u0041\u0077\u006b\u0077\u0061\u0072\u0064\u005d"
+        ],
+        "alias": "尴尬",
+        "webFile": "QQ经典/10.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/11.png",
+        "key": [
+            "/::@",
+            "/发怒",
+            "[发怒]",
+            "[發怒]",
+            "[Angry]",
+            "[Pout]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0040",
+            "\u002f\u53d1\u6012",
+            "\u005b\u53d1\u6012\u005d",
+            "\u005b\u767c\u6012\u005d",
+            "\u005b\u0041\u006e\u0067\u0072\u0079\u005d",
+            "\u005b\u0050\u006f\u0075\u0074\u005d"
+        ],
+        "alias": "发怒",
+        "webFile": "QQ经典/11.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/12.png",
+        "key": [
+            "/::P",
+            "/调皮",
+            "[调皮]",
+            "[調皮]",
+            "[Tongue]",
+            "[Wink]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0050",
+            "\u002f\u8c03\u76ae",
+            "\u005b\u8c03\u76ae\u005d",
+            "\u005b\u8abf\u76ae\u005d",
+            "\u005b\u0054\u006f\u006e\u0067\u0075\u0065\u005d",
+            "\u005b\u0057\u0069\u006e\u006b\u005d"
+        ],
+        "alias": "调皮",
+        "webFile": "QQ经典/12.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/13.png",
+        "key": [
+            "/::D",
+            "/呲牙",
+            "[呲牙]",
+            "[Grin]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0044",
+            "\u002f\u5472\u7259",
+            "\u005b\u5472\u7259\u005d",
+            "\u005b\u0047\u0072\u0069\u006e\u005d"
+        ],
+        "alias": "呲牙",
+        "webFile": "QQ经典/13.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/14.png",
+        "key": [
+            "/::O",
+            "/惊讶",
+            "[惊讶]",
+            "[驚訝]",
+            "[Surprise]",
+            "[Surprised]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u004f",
+            "\u002f\u60ca\u8bb6",
+            "\u005b\u60ca\u8bb6\u005d",
+            "\u005b\u9a5a\u8a1d\u005d",
+            "\u005b\u0053\u0075\u0072\u0070\u0072\u0069\u0073\u0065\u005d",
+            "\u005b\u0053\u0075\u0072\u0070\u0072\u0069\u0073\u0065\u0064\u005d"
+        ],
+        "alias": "惊讶",
+        "webFile": "QQ经典/14.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/15.png",
+        "key": [
+            "/::(",
+            "/难过",
+            "[难过]",
+            "[難過]",
+            "[Frown]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0028",
+            "\u002f\u96be\u8fc7",
+            "\u005b\u96be\u8fc7\u005d",
+            "\u005b\u96e3\u904e\u005d",
+            "\u005b\u0046\u0072\u006f\u0077\u006e\u005d"
+        ],
+        "alias": "难过",
+        "webFile": "QQ经典/15.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/16.png",
+        "key": [
+            "/::+",
+            "/酷",
+            "[酷]",
+            "[Ruthless]",
+            "[Cool]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u002b",
+            "\u002f\u9177",
+            "\u005b\u9177\u005d",
+            "\u005b\u0052\u0075\u0074\u0068\u006c\u0065\u0073\u0073\u005d",
+            "\u005b\u0043\u006f\u006f\u006c\u005d"
+        ],
+        "alias": "酷",
+        "webFile": "QQ经典/16.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/17.png",
+        "key": [
+            "/:--b",
+            "/冷汗",
+            "[冷汗]",
+            "[Tension]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u002d\u002d\u0062",
+            "\u002f\u51b7\u6c57",
+            "\u005b\u51b7\u6c57\u005d",
+            "\u005b\u0054\u0065\u006e\u0073\u0069\u006f\u006e\u005d"
+        ],
+        "alias": "冷汗",
+        "webFile": "QQ经典/17.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/18.png",
+        "key": [
+            "/::Q",
+            "/抓狂",
+            "[抓狂]",
+            "[Scream]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0051",
+            "\u002f\u6293\u72c2",
+            "\u005b\u6293\u72c2\u005d",
+            "\u005b\u0053\u0063\u0072\u0065\u0061\u006d\u005d"
+        ],
+        "alias": "抓狂",
+        "webFile": "QQ经典/18.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/19.png",
+        "key": [
+            "/::T",
+            "/吐",
+            "[吐]",
+            "[Puke]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0054",
+            "\u002f\u5410",
+            "\u005b\u5410\u005d",
+            "\u005b\u0050\u0075\u006b\u0065\u005d"
+        ],
+        "alias": "吐",
+        "webFile": "QQ经典/19.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/20.png",
+        "key": [
+            "/:,@P",
+            "/偷笑",
+            "[偷笑]",
+            "[Chuckle]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u002c\u0040\u0050",
+            "\u002f\u5077\u7b11",
+            "\u005b\u5077\u7b11\u005d",
+            "\u005b\u0043\u0068\u0075\u0063\u006b\u006c\u0065\u005d"
+        ],
+        "alias": "偷笑",
+        "webFile": "QQ经典/20.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/21.png",
+        "key": [
+            "/:,@-D",
+            "/可爱",
+            "[愉快]",
+            "[Joyful]",
+            "[可爱]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u002c\u0040\u002d\u0044",
+            "\u002f\u53ef\u7231",
+            "\u005b\u6109\u5feb\u005d",
+            "\u005b\u004a\u006f\u0079\u0066\u0075\u006c\u005d",
+            "\u005b\u53ef\u7231\u005d"
+        ],
+        "alias": "可爱",
+        "webFile": "QQ经典/21.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/22.png",
+        "key": [
+            "/::d",
+            "/白眼",
+            "[白眼]",
+            "[Slight]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0064",
+            "\u002f\u767d\u773c",
+            "\u005b\u767d\u773c\u005d",
+            "\u005b\u0053\u006c\u0069\u0067\u0068\u0074\u005d"
+        ],
+        "alias": "白眼",
+        "webFile": "QQ经典/22.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/23.png",
+        "key": [
+            "/:,@o",
+            "/傲慢",
+            "[傲慢]",
+            "[Smug]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u002c\u0040\u006f",
+            "\u002f\u50b2\u6162",
+            "\u005b\u50b2\u6162\u005d",
+            "\u005b\u0053\u006d\u0075\u0067\u005d"
+        ],
+        "alias": "傲慢",
+        "webFile": "QQ经典/23.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/24.png",
+        "key": [
+            "/::g",
+            "/饥饿",
+            "[饥饿]",
+            "[饑餓]",
+            "[Hungry]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0067",
+            "\u002f\u9965\u997f",
+            "\u005b\u9965\u997f\u005d",
+            "\u005b\u9951\u9913\u005d",
+            "\u005b\u0048\u0075\u006e\u0067\u0072\u0079\u005d"
+        ],
+        "alias": "饥饿",
+        "webFile": "QQ经典/24.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/25.png",
+        "key": [
+            "/:|-)",
+            "/困",
+            "[困]",
+            "[累]",
+            "[Drowsy]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u007c\u002d\u0029",
+            "\u002f\u56f0",
+            "\u005b\u56f0\u005d",
+            "\u005b\u7d2f\u005d",
+            "\u005b\u0044\u0072\u006f\u0077\u0073\u0079\u005d"
+        ],
+        "alias": "困",
+        "webFile": "QQ经典/25.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/26.png",
+        "key": [
+            "/::!",
+            "/惊恐",
+            "[惊恐]",
+            "[驚恐]",
+            "[Panic]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0021",
+            "\u002f\u60ca\u6050",
+            "\u005b\u60ca\u6050\u005d",
+            "\u005b\u9a5a\u6050\u005d",
+            "\u005b\u0050\u0061\u006e\u0069\u0063\u005d"
+        ],
+        "alias": "惊恐",
+        "webFile": "QQ经典/26.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/27.png",
+        "key": [
+            "/::L",
+            "/流汗",
+            "[流汗]",
+            "[Sweat]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u004c",
+            "\u002f\u6d41\u6c57",
+            "\u005b\u6d41\u6c57\u005d",
+            "\u005b\u0053\u0077\u0065\u0061\u0074\u005d"
+        ],
+        "alias": "流汗",
+        "webFile": "QQ经典/27.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/28.png",
+        "key": [
+            "/::>",
+            "/憨笑",
+            "[憨笑]",
+            "[大笑]",
+            "[Laugh]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u003e",
+            "\u002f\u61a8\u7b11",
+            "\u005b\u61a8\u7b11\u005d",
+            "\u005b\u5927\u7b11\u005d",
+            "\u005b\u004c\u0061\u0075\u0067\u0068\u005d"
+        ],
+        "alias": "憨笑",
+        "webFile": "QQ经典/28.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/29.png",
+        "key": [
+            "/::,@",
+            "/大兵",
+            "[悠闲]",
+            "[悠閑]",
+            "[Commando]",
+            "[大兵]",
+            "[Loafer]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u002c\u0040",
+            "\u002f\u5927\u5175",
+            "\u005b\u60a0\u95f2\u005d",
+            "\u005b\u60a0\u9591\u005d",
+            "\u005b\u0043\u006f\u006d\u006d\u0061\u006e\u0064\u006f\u005d",
+            "\u005b\u5927\u5175\u005d",
+            "\u005b\u004c\u006f\u0061\u0066\u0065\u0072\u005d"
+        ],
+        "alias": "大兵",
+        "webFile": "QQ经典/29.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/30.png",
+        "key": [
+            "/:,@f",
+            "/奋斗",
+            "[奋斗]",
+            "[奮鬥]",
+            "[Determined]",
+            "[Strive]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u002c\u0040\u0066",
+            "\u002f\u594b\u6597",
+            "\u005b\u594b\u6597\u005d",
+            "\u005b\u596e\u9b25\u005d",
+            "\u005b\u0044\u0065\u0074\u0065\u0072\u006d\u0069\u006e\u0065\u0064\u005d",
+            "\u005b\u0053\u0074\u0072\u0069\u0076\u0065\u005d"
+        ],
+        "alias": "奋斗",
+        "webFile": "QQ经典/30.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/31.png",
+        "key": [
+            "/::-S",
+            "/咒骂",
+            "[咒骂]",
+            "[咒罵]",
+            "[Scold]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u002d\u0053",
+            "\u002f\u5492\u9a82",
+            "\u005b\u5492\u9a82\u005d",
+            "\u005b\u5492\u7f75\u005d",
+            "\u005b\u0053\u0063\u006f\u006c\u0064\u005d"
+        ],
+        "alias": "咒骂",
+        "webFile": "QQ经典/31.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/32.png",
+        "key": [
+            "/:?",
+            "/疑问",
+            "[疑问]",
+            "[疑問]",
+            "[Shocked]",
+            "[Doubt]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003f",
+            "\u002f\u7591\u95ee",
+            "\u005b\u7591\u95ee\u005d",
+            "\u005b\u7591\u554f\u005d",
+            "\u005b\u0053\u0068\u006f\u0063\u006b\u0065\u0064\u005d",
+            "\u005b\u0044\u006f\u0075\u0062\u0074\u005d"
+        ],
+        "alias": "疑问",
+        "webFile": "QQ经典/32.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/33.png",
+        "key": [
+            "/:,@x",
+            "/嘘",
+            "[嘘]",
+            "[噓]",
+            "[Shhh]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u002c\u0040\u0078",
+            "\u002f\u5618",
+            "\u005b\u5618\u005d",
+            "\u005b\u5653\u005d",
+            "\u005b\u0053\u0068\u0068\u0068\u005d"
+        ],
+        "alias": "嘘",
+        "webFile": "QQ经典/33.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/34.png",
+        "key": [
+            "/:,@@",
+            "/晕",
+            "[晕]",
+            "[暈]",
+            "[Dizzy]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u002c\u0040\u0040",
+            "\u002f\u6655",
+            "\u005b\u6655\u005d",
+            "\u005b\u6688\u005d",
+            "\u005b\u0044\u0069\u007a\u007a\u0079\u005d"
+        ],
+        "alias": "晕",
+        "webFile": "QQ经典/34.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/35.png",
+        "key": [
+            "/::8",
+            "/折磨",
+            "[疯了]",
+            "[瘋了]",
+            "[Tormented]",
+            "[折磨]",
+            "[Crazy]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0038",
+            "\u002f\u6298\u78e8",
+            "\u005b\u75af\u4e86\u005d",
+            "\u005b\u760b\u4e86\u005d",
+            "\u005b\u0054\u006f\u0072\u006d\u0065\u006e\u0074\u0065\u0064\u005d",
+            "\u005b\u6298\u78e8\u005d",
+            "\u005b\u0043\u0072\u0061\u007a\u0079\u005d"
+        ],
+        "alias": "折磨",
+        "webFile": "QQ经典/35.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/36.png",
+        "key": [
+            "/:,@!",
+            "/衰",
+            "[衰]",
+            "[Toasted]",
+            "[BadLuck]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u002c\u0040\u0021",
+            "\u002f\u8870",
+            "\u005b\u8870\u005d",
+            "\u005b\u0054\u006f\u0061\u0073\u0074\u0065\u0064\u005d",
+            "\u005b\u0042\u0061\u0064\u004c\u0075\u0063\u006b\u005d"
+        ],
+        "alias": "衰",
+        "webFile": "QQ经典/36.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/37.png",
+        "key": [
+            "/:!!!",
+            "/骷髅",
+            "[骷髅]",
+            "[骷髏頭]",
+            "[Skull]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0021\u0021\u0021",
+            "\u002f\u9ab7\u9ac5",
+            "\u005b\u9ab7\u9ac5\u005d",
+            "\u005b\u9ab7\u9acf\u982d\u005d",
+            "\u005b\u0053\u006b\u0075\u006c\u006c\u005d"
+        ],
+        "alias": "骷髅",
+        "webFile": "QQ经典/37.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/38.png",
+        "key": [
+            "/:xx",
+            "/敲打",
+            "[敲打]",
+            "[Hammer]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0078\u0078",
+            "\u002f\u6572\u6253",
+            "\u005b\u6572\u6253\u005d",
+            "\u005b\u0048\u0061\u006d\u006d\u0065\u0072\u005d"
+        ],
+        "alias": "敲打",
+        "webFile": "QQ经典/38.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/39.png",
+        "key": [
+            "/:bye",
+            "/再见",
+            "[Wave]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0062\u0079\u0065",
+            "\u002f\u518d\u89c1",
+            "\u005b\u0057\u0061\u0076\u0065\u005d"
+        ],
+        "alias": "再见",
+        "webFile": "QQ经典/39.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/40.png",
+        "key": [
+            "/:wipe",
+            "/擦汗",
+            "[擦汗]",
+            "[Speechless]",
+            "[Relief]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0077\u0069\u0070\u0065",
+            "\u002f\u64e6\u6c57",
+            "\u005b\u64e6\u6c57\u005d",
+            "\u005b\u0053\u0070\u0065\u0065\u0063\u0068\u006c\u0065\u0073\u0073\u005d",
+            "\u005b\u0052\u0065\u006c\u0069\u0065\u0066\u005d"
+        ],
+        "alias": "擦汗",
+        "webFile": "QQ经典/40.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/41.png",
+        "key": [
+            "/:dig",
+            "/抠鼻",
+            "[抠鼻]",
+            "[摳鼻]",
+            "[NosePick]",
+            "[DigNose]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0064\u0069\u0067",
+            "\u002f\u62a0\u9f3b",
+            "\u005b\u62a0\u9f3b\u005d",
+            "\u005b\u6473\u9f3b\u005d",
+            "\u005b\u004e\u006f\u0073\u0065\u0050\u0069\u0063\u006b\u005d",
+            "\u005b\u0044\u0069\u0067\u004e\u006f\u0073\u0065\u005d"
+        ],
+        "alias": "抠鼻",
+        "webFile": "QQ经典/41.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/42.png",
+        "key": [
+            "/:handclap",
+            "/鼓掌",
+            "[鼓掌]",
+            "[Clap]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0068\u0061\u006e\u0064\u0063\u006c\u0061\u0070",
+            "\u002f\u9f13\u638c",
+            "\u005b\u9f13\u638c\u005d",
+            "\u005b\u0043\u006c\u0061\u0070\u005d"
+        ],
+        "alias": "鼓掌",
+        "webFile": "QQ经典/42.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/43.png",
+        "key": [
+            "/:&-(",
+            "/糗大了",
+            "[糗大了]",
+            "[羞辱]",
+            "[Shame]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0026\u002d\u0028",
+            "\u002f\u7cd7\u5927\u4e86",
+            "\u005b\u7cd7\u5927\u4e86\u005d",
+            "\u005b\u7f9e\u8fb1\u005d",
+            "\u005b\u0053\u0068\u0061\u006d\u0065\u005d"
+        ],
+        "alias": "糗大了",
+        "webFile": "QQ经典/43.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/44.png",
+        "key": [
+            "/:B-)",
+            "/坏笑",
+            "[坏笑]",
+            "[壞笑]",
+            "[Trick]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0042\u002d\u0029",
+            "\u002f\u574f\u7b11",
+            "\u005b\u574f\u7b11\u005d",
+            "\u005b\u58de\u7b11\u005d",
+            "\u005b\u0054\u0072\u0069\u0063\u006b\u005d"
+        ],
+        "alias": "坏笑",
+        "webFile": "QQ经典/44.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/45.png",
+        "key": [
+            "/:<@",
+            "/左哼哼",
+            "[左哼哼]",
+            "[Bah！L]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003c\u0040",
+            "\u002f\u5de6\u54fc\u54fc",
+            "\u005b\u5de6\u54fc\u54fc\u005d",
+            "\u005b\u0042\u0061\u0068\uff01\u004c\u005d"
+        ],
+        "alias": "左哼哼",
+        "webFile": "QQ经典/45.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/46.png",
+        "key": [
+            "/:@>",
+            "/右哼哼",
+            "[右哼哼]",
+            "[Bah！R]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0040\u003e",
+            "\u002f\u53f3\u54fc\u54fc",
+            "\u005b\u53f3\u54fc\u54fc\u005d",
+            "\u005b\u0042\u0061\u0068\uff01\u0052\u005d"
+        ],
+        "alias": "右哼哼",
+        "webFile": "QQ经典/46.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/47.png",
+        "key": [
+            "/::-O",
+            "/哈欠",
+            "[哈欠]",
+            "[Yawn]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u002d\u004f",
+            "\u002f\u54c8\u6b20",
+            "\u005b\u54c8\u6b20\u005d",
+            "\u005b\u0059\u0061\u0077\u006e\u005d"
+        ],
+        "alias": "哈欠",
+        "webFile": "QQ经典/47.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/48.png",
+        "key": [
+            "/:>-|",
+            "/鄙视",
+            "[鄙视]",
+            "[鄙視]",
+            "[Pooh-pooh]",
+            "[Lookdown]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003e\u002d\u007c",
+            "\u002f\u9119\u89c6",
+            "\u005b\u9119\u89c6\u005d",
+            "\u005b\u9119\u8996\u005d",
+            "\u005b\u0050\u006f\u006f\u0068\u002d\u0070\u006f\u006f\u0068\u005d",
+            "\u005b\u004c\u006f\u006f\u006b\u0064\u006f\u0077\u006e\u005d"
+        ],
+        "alias": "鄙视",
+        "webFile": "QQ经典/48.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/49.png",
+        "key": [
+            "/:P-(",
+            "/委屈",
+            "[委屈]",
+            "[Shrunken]",
+            "[Wronged]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0050\u002d\u0028",
+            "\u002f\u59d4\u5c48",
+            "\u005b\u59d4\u5c48\u005d",
+            "\u005b\u0053\u0068\u0072\u0075\u006e\u006b\u0065\u006e\u005d",
+            "\u005b\u0057\u0072\u006f\u006e\u0067\u0065\u0064\u005d"
+        ],
+        "alias": "委屈",
+        "webFile": "QQ经典/49.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/50.png",
+        "key": [
+            "/::'|",
+            "/快哭了",
+            "[快哭了]",
+            "[TearingUp]",
+            "[Puling]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u0027\u007c",
+            "\u002f\u5feb\u54ed\u4e86",
+            "\u005b\u5feb\u54ed\u4e86\u005d",
+            "\u005b\u0054\u0065\u0061\u0072\u0069\u006e\u0067\u0055\u0070\u005d",
+            "\u005b\u0050\u0075\u006c\u0069\u006e\u0067\u005d"
+        ],
+        "alias": "快哭了",
+        "webFile": "QQ经典/50.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/51.png",
+        "key": [
+            "/:X-)",
+            "/阴险",
+            "[阴险]",
+            "[陰險]",
+            "[Sly]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0058\u002d\u0029",
+            "\u002f\u9634\u9669",
+            "\u005b\u9634\u9669\u005d",
+            "\u005b\u9670\u96aa\u005d",
+            "\u005b\u0053\u006c\u0079\u005d"
+        ],
+        "alias": "阴险",
+        "webFile": "QQ经典/51.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/52.png",
+        "key": [
+            "/::*",
+            "/亲亲",
+            "[亲亲]",
+            "[親親]",
+            "[Kiss]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003a\u002a",
+            "\u002f\u4eb2\u4eb2",
+            "\u005b\u4eb2\u4eb2\u005d",
+            "\u005b\u89aa\u89aa\u005d",
+            "\u005b\u004b\u0069\u0073\u0073\u005d"
+        ],
+        "alias": "亲亲",
+        "webFile": "QQ经典/52.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/53.png",
+        "key": [
+            "/:@x",
+            "/吓",
+            "[吓]",
+            "[嚇]",
+            "[Wrath]",
+            "[Uh-oh]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0040\u0078",
+            "\u002f\u5413",
+            "\u005b\u5413\u005d",
+            "\u005b\u5687\u005d",
+            "\u005b\u0057\u0072\u0061\u0074\u0068\u005d",
+            "\u005b\u0055\u0068\u002d\u006f\u0068\u005d"
+        ],
+        "alias": "吓",
+        "webFile": "QQ经典/53.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/54.png",
+        "key": [
+            "/:8*",
+            "/可怜",
+            "[可怜]",
+            "[可憐]",
+            "[Whimper]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0038\u002a",
+            "\u002f\u53ef\u601c",
+            "\u005b\u53ef\u601c\u005d",
+            "\u005b\u53ef\u6190\u005d",
+            "\u005b\u0057\u0068\u0069\u006d\u0070\u0065\u0072\u005d"
+        ],
+        "alias": "可怜",
+        "webFile": "QQ经典/54.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/55.png",
+        "key": [
+            "/:pd",
+            "/菜刀",
+            "[菜刀]",
+            "[Cleaver]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0070\u0064",
+            "\u002f\u83dc\u5200",
+            "\u005b\u83dc\u5200\u005d",
+            "\u005b\u0043\u006c\u0065\u0061\u0076\u0065\u0072\u005d"
+        ],
+        "alias": "菜刀",
+        "webFile": "QQ经典/55.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/56.png",
+        "key": [
+            "/:<W>",
+            "/西瓜",
+            "[西瓜]",
+            "[Watermelon]",
+            "[Melon]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003c\u0057\u003e",
+            "\u002f\u897f\u74dc",
+            "\u005b\u897f\u74dc\u005d",
+            "\u005b\u0057\u0061\u0074\u0065\u0072\u006d\u0065\u006c\u006f\u006e\u005d",
+            "\u005b\u004d\u0065\u006c\u006f\u006e\u005d"
+        ],
+        "alias": "西瓜",
+        "webFile": "QQ经典/56.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/57.png",
+        "key": [
+            "/:beer",
+            "/啤酒",
+            "[啤酒]",
+            "[Beer]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0062\u0065\u0065\u0072",
+            "\u002f\u5564\u9152",
+            "\u005b\u5564\u9152\u005d",
+            "\u005b\u0042\u0065\u0065\u0072\u005d"
+        ],
+        "alias": "啤酒",
+        "webFile": "QQ经典/57.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/58.png",
+        "key": [
+            "/:basketb",
+            "/篮球",
+            "[篮球]",
+            "[籃球]",
+            "[Basketball]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0062\u0061\u0073\u006b\u0065\u0074\u0062",
+            "\u002f\u7bee\u7403",
+            "\u005b\u7bee\u7403\u005d",
+            "\u005b\u7c43\u7403\u005d",
+            "\u005b\u0042\u0061\u0073\u006b\u0065\u0074\u0062\u0061\u006c\u006c\u005d"
+        ],
+        "alias": "篮球",
+        "webFile": "QQ经典/58.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/59.png",
+        "key": [
+            "/:oo",
+            "/乒乓",
+            "[乒乓]",
+            "[PingPong]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u006f\u006f",
+            "\u002f\u4e52\u4e53",
+            "\u005b\u4e52\u4e53\u005d",
+            "\u005b\u0050\u0069\u006e\u0067\u0050\u006f\u006e\u0067\u005d"
+        ],
+        "alias": "乒乓",
+        "webFile": "QQ经典/59.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/60.png",
+        "key": [
+            "/:coffee",
+            "/咖啡",
+            "[咖啡]",
+            "[Coffee]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0063\u006f\u0066\u0066\u0065\u0065",
+            "\u002f\u5496\u5561",
+            "\u005b\u5496\u5561\u005d",
+            "\u005b\u0043\u006f\u0066\u0066\u0065\u0065\u005d"
+        ],
+        "alias": "咖啡",
+        "webFile": "QQ经典/60.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/61.png",
+        "key": [
+            "/:eat",
+            "/饭",
+            "[饭]",
+            "[飯]",
+            "[Rice]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0065\u0061\u0074",
+            "\u002f\u996d",
+            "\u005b\u996d\u005d",
+            "\u005b\u98ef\u005d",
+            "\u005b\u0052\u0069\u0063\u0065\u005d"
+        ],
+        "alias": "饭",
+        "webFile": "QQ经典/61.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/62.png",
+        "key": [
+            "/:pig",
+            "/猪头",
+            "[猪头]",
+            "[豬頭]",
+            "[Pig]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0070\u0069\u0067",
+            "\u002f\u732a\u5934",
+            "\u005b\u732a\u5934\u005d",
+            "\u005b\u8c6c\u982d\u005d",
+            "\u005b\u0050\u0069\u0067\u005d"
+        ],
+        "alias": "猪头",
+        "webFile": "QQ经典/62.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/63.png",
+        "key": [
+            "/:rose",
+            "/玫瑰",
+            "[玫瑰]",
+            "[Rose]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0072\u006f\u0073\u0065",
+            "\u002f\u73ab\u7470",
+            "\u005b\u73ab\u7470\u005d",
+            "\u005b\u0052\u006f\u0073\u0065\u005d"
+        ],
+        "alias": "玫瑰",
+        "webFile": "QQ经典/63.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/64.png",
+        "key": [
+            "/:fade",
+            "/凋谢",
+            "[凋谢]",
+            "[枯萎]",
+            "[Wilt]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0066\u0061\u0064\u0065",
+            "\u002f\u51cb\u8c22",
+            "\u005b\u51cb\u8c22\u005d",
+            "\u005b\u67af\u840e\u005d",
+            "\u005b\u0057\u0069\u006c\u0074\u005d"
+        ],
+        "alias": "凋谢",
+        "webFile": "QQ经典/64.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/65.png",
+        "key": [
+            "/:showlove",
+            "/示爱",
+            "[嘴唇]",
+            "[Lips]",
+            "[示爱]",
+            "[Lip]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0073\u0068\u006f\u0077\u006c\u006f\u0076\u0065",
+            "\u002f\u793a\u7231",
+            "\u005b\u5634\u5507\u005d",
+            "\u005b\u004c\u0069\u0070\u0073\u005d",
+            "\u005b\u793a\u7231\u005d",
+            "\u005b\u004c\u0069\u0070\u005d"
+        ],
+        "alias": "嘴唇",
+        "webFile": "QQ经典/65.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/66.png",
+        "key": [
+            "/:heart",
+            "/爱心",
+            "[爱心]",
+            "[愛心]",
+            "[Heart]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0068\u0065\u0061\u0072\u0074",
+            "\u002f\u7231\u5fc3",
+            "\u005b\u7231\u5fc3\u005d",
+            "\u005b\u611b\u5fc3\u005d",
+            "\u005b\u0048\u0065\u0061\u0072\u0074\u005d"
+        ],
+        "alias": "爱心",
+        "webFile": "QQ经典/66.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/67.png",
+        "key": [
+            "/:break",
+            "/心碎",
+            "[心碎]",
+            "[BrokenHeart]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0062\u0072\u0065\u0061\u006b",
+            "\u002f\u5fc3\u788e",
+            "\u005b\u5fc3\u788e\u005d",
+            "\u005b\u0042\u0072\u006f\u006b\u0065\u006e\u0048\u0065\u0061\u0072\u0074\u005d"
+        ],
+        "alias": "心碎",
+        "webFile": "QQ经典/67.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/68.png",
+        "key": [
+            "/:cake",
+            "/蛋糕",
+            "[蛋糕]",
+            "[Cake]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0063\u0061\u006b\u0065",
+            "\u002f\u86cb\u7cd5",
+            "\u005b\u86cb\u7cd5\u005d",
+            "\u005b\u0043\u0061\u006b\u0065\u005d"
+        ],
+        "alias": "蛋糕",
+        "webFile": "QQ经典/68.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/69.png",
+        "key": [
+            "/:li",
+            "/闪电",
+            "[闪电]",
+            "[閃電]",
+            "[Lightning]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u006c\u0069",
+            "\u002f\u95ea\u7535",
+            "\u005b\u95ea\u7535\u005d",
+            "\u005b\u9583\u96fb\u005d",
+            "\u005b\u004c\u0069\u0067\u0068\u0074\u006e\u0069\u006e\u0067\u005d"
+        ],
+        "alias": "闪电",
+        "webFile": "QQ经典/69.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/70.png",
+        "key": [
+            "/:bome",
+            "/炸弹",
+            "[炸弹]",
+            "[炸彈]",
+            "[Bomb]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0062\u006f\u006d\u0065",
+            "\u002f\u70b8\u5f39",
+            "\u005b\u70b8\u5f39\u005d",
+            "\u005b\u70b8\u5f48\u005d",
+            "\u005b\u0042\u006f\u006d\u0062\u005d"
+        ],
+        "alias": "炸弹",
+        "webFile": "QQ经典/70.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/71.png",
+        "key": [
+            "/:kn",
+            "/刀",
+            "[刀]",
+            "[Dagger]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u006b\u006e",
+            "\u002f\u5200",
+            "\u005b\u5200\u005d",
+            "\u005b\u0044\u0061\u0067\u0067\u0065\u0072\u005d"
+        ],
+        "alias": "刀",
+        "webFile": "QQ经典/71.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/72.png",
+        "key": [
+            "/:footb",
+            "/足球",
+            "[足球]",
+            "[Soccer]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0066\u006f\u006f\u0074\u0062",
+            "\u002f\u8db3\u7403",
+            "\u005b\u8db3\u7403\u005d",
+            "\u005b\u0053\u006f\u0063\u0063\u0065\u0072\u005d"
+        ],
+        "alias": "足球",
+        "webFile": "QQ经典/72.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/73.png",
+        "key": [
+            "/:ladybug",
+            "/瓢虫",
+            "[瓢虫]",
+            "[甲蟲]",
+            "[Ladybug]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u006c\u0061\u0064\u0079\u0062\u0075\u0067",
+            "\u002f\u74e2\u866b",
+            "\u005b\u74e2\u866b\u005d",
+            "\u005b\u7532\u87f2\u005d",
+            "\u005b\u004c\u0061\u0064\u0079\u0062\u0075\u0067\u005d"
+        ],
+        "alias": "瓢虫",
+        "webFile": "QQ经典/73.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/74.png",
+        "key": [
+            "/:shit",
+            "/便便",
+            "[便便]",
+            "[Poop]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0073\u0068\u0069\u0074",
+            "\u002f\u4fbf\u4fbf",
+            "\u005b\u4fbf\u4fbf\u005d",
+            "\u005b\u0050\u006f\u006f\u0070\u005d"
+        ],
+        "alias": "便便",
+        "webFile": "QQ经典/74.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/75.png",
+        "key": [
+            "/:moon",
+            "/月亮",
+            "[月亮]",
+            "[Moon]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u006d\u006f\u006f\u006e",
+            "\u002f\u6708\u4eae",
+            "\u005b\u6708\u4eae\u005d",
+            "\u005b\u004d\u006f\u006f\u006e\u005d"
+        ],
+        "alias": "月亮",
+        "webFile": "QQ经典/75.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/76.png",
+        "key": [
+            "/:sun",
+            "/太阳",
+            "[太阳]",
+            "[太陽]",
+            "[Sun]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0073\u0075\u006e",
+            "\u002f\u592a\u9633",
+            "\u005b\u592a\u9633\u005d",
+            "\u005b\u592a\u967d\u005d",
+            "\u005b\u0053\u0075\u006e\u005d"
+        ],
+        "alias": "太阳",
+        "webFile": "QQ经典/76.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/77.png",
+        "key": [
+            "/:gift",
+            "/礼物",
+            "[礼物]",
+            "[禮物]",
+            "[Gift]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0067\u0069\u0066\u0074",
+            "\u002f\u793c\u7269",
+            "\u005b\u793c\u7269\u005d",
+            "\u005b\u79ae\u7269\u005d",
+            "\u005b\u0047\u0069\u0066\u0074\u005d"
+        ],
+        "alias": "礼物",
+        "webFile": "QQ经典/77.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/78.png",
+        "key": [
+            "/:hug",
+            "/拥抱",
+            "[拥抱]",
+            "[擁抱]",
+            "[Hug]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0068\u0075\u0067",
+            "\u002f\u62e5\u62b1",
+            "\u005b\u62e5\u62b1\u005d",
+            "\u005b\u64c1\u62b1\u005d",
+            "\u005b\u0048\u0075\u0067\u005d"
+        ],
+        "alias": "拥抱",
+        "webFile": "QQ经典/78.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/79.png",
+        "key": [
+            "/:strong",
+            "/强",
+            "[强]",
+            "[強]",
+            "[ThumbsUp]",
+            "[Strong]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0073\u0074\u0072\u006f\u006e\u0067",
+            "\u002f\u5f3a",
+            "\u005b\u5f3a\u005d",
+            "\u005b\u5f37\u005d",
+            "\u005b\u0054\u0068\u0075\u006d\u0062\u0073\u0055\u0070\u005d",
+            "\u005b\u0053\u0074\u0072\u006f\u006e\u0067\u005d"
+        ],
+        "alias": "强",
+        "webFile": "QQ经典/79.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/80.png",
+        "key": [
+            "/:weak",
+            "/弱",
+            "[弱]",
+            "[ThumbsDown]",
+            "[Weak]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0077\u0065\u0061\u006b",
+            "\u002f\u5f31",
+            "\u005b\u5f31\u005d",
+            "\u005b\u0054\u0068\u0075\u006d\u0062\u0073\u0044\u006f\u0077\u006e\u005d",
+            "\u005b\u0057\u0065\u0061\u006b\u005d"
+        ],
+        "alias": "弱",
+        "webFile": "QQ经典/80.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/81.png",
+        "key": [
+            "/:share",
+            "/握手",
+            "[握手]",
+            "[Shake]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0073\u0068\u0061\u0072\u0065",
+            "\u002f\u63e1\u624b",
+            "\u005b\u63e1\u624b\u005d",
+            "\u005b\u0053\u0068\u0061\u006b\u0065\u005d"
+        ],
+        "alias": "握手",
+        "webFile": "QQ经典/81.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/82.png",
+        "key": [
+            "/:v",
+            "/胜利",
+            "[胜利]",
+            "[勝利]",
+            "[Peace]",
+            "[Victory]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0076",
+            "\u002f\u80dc\u5229",
+            "\u005b\u80dc\u5229\u005d",
+            "\u005b\u52dd\u5229\u005d",
+            "\u005b\u0050\u0065\u0061\u0063\u0065\u005d",
+            "\u005b\u0056\u0069\u0063\u0074\u006f\u0072\u0079\u005d"
+        ],
+        "alias": "胜利",
+        "webFile": "QQ经典/82.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/83.png",
+        "key": [
+            "/:@)",
+            "/抱拳",
+            "[Fight]",
+            "[Admire]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0040\u0029",
+            "\u002f\u62b1\u62f3",
+            "\u005b\u0046\u0069\u0067\u0068\u0074\u005d",
+            "\u005b\u0041\u0064\u006d\u0069\u0072\u0065\u005d"
+        ],
+        "alias": "抱拳",
+        "webFile": "QQ经典/83.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/84.png",
+        "key": [
+            "/:jj",
+            "/勾引",
+            "[勾引]",
+            "[Beckon]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u006a\u006a",
+            "\u002f\u52fe\u5f15",
+            "\u005b\u52fe\u5f15\u005d",
+            "\u005b\u0042\u0065\u0063\u006b\u006f\u006e\u005d"
+        ],
+        "alias": "勾引",
+        "webFile": "QQ经典/84.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/85.png",
+        "key": [
+            "/:@@",
+            "/拳头",
+            "[拳头]",
+            "[拳頭]",
+            "[Fist]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0040\u0040",
+            "\u002f\u62f3\u5934",
+            "\u005b\u62f3\u5934\u005d",
+            "\u005b\u62f3\u982d\u005d",
+            "\u005b\u0046\u0069\u0073\u0074\u005d"
+        ],
+        "alias": "拳头",
+        "webFile": "QQ经典/85.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/86.png",
+        "key": [
+            "/:bad",
+            "/差劲",
+            "[差劲]",
+            "[差勁]",
+            "[Pinky]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0062\u0061\u0064",
+            "\u002f\u5dee\u52b2",
+            "\u005b\u5dee\u52b2\u005d",
+            "\u005b\u5dee\u52c1\u005d",
+            "\u005b\u0050\u0069\u006e\u006b\u0079\u005d"
+        ],
+        "alias": "差劲",
+        "webFile": "QQ经典/86.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/87.png",
+        "key": [
+            "/:lvu",
+            "/爱你",
+            "[爱你]",
+            "[RockOn]",
+            "[Love]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u006c\u0076\u0075",
+            "\u002f\u7231\u4f60",
+            "\u005b\u7231\u4f60\u005d",
+            "\u005b\u0052\u006f\u0063\u006b\u004f\u006e\u005d",
+            "\u005b\u004c\u006f\u0076\u0065\u005d"
+        ],
+        "alias": "爱你",
+        "webFile": "QQ经典/87.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/88.png",
+        "key": [
+            "/:no",
+            "/NO",
+            "[NO]",
+            "[愛你]",
+            "[Nuh-uh]",
+            "[No]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u006e\u006f",
+            "\u002f\u004e\u004f",
+            "\u005b\u004e\u004f\u005d",
+            "\u005b\u611b\u4f60\u005d",
+            "\u005b\u004e\u0075\u0068\u002d\u0075\u0068\u005d",
+            "\u005b\u004e\u006f\u005d"
+        ],
+        "alias": "NO",
+        "webFile": "QQ经典/88.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/89.png",
+        "key": [
+            "/:ok",
+            "/OK",
+            "[OK]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u006f\u006b",
+            "\u002f\u004f\u004b",
+            "\u005b\u004f\u004b\u005d"
+        ],
+        "alias": "OK",
+        "webFile": "QQ经典/89.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/90.png",
+        "key": [
+            "/:love",
+            "/爱情",
+            "[爱情]",
+            "[愛情]",
+            "[InLove]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u006c\u006f\u0076\u0065",
+            "\u002f\u7231\u60c5",
+            "\u005b\u7231\u60c5\u005d",
+            "\u005b\u611b\u60c5\u005d",
+            "\u005b\u0049\u006e\u004c\u006f\u0076\u0065\u005d"
+        ],
+        "alias": "爱情",
+        "webFile": "QQ经典/90.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/91.png",
+        "key": [
+            "/:<L>",
+            "/飞吻",
+            "[飞吻]",
+            "[飛吻]",
+            "[Blowkiss]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003c\u004c\u003e",
+            "\u002f\u98de\u543b",
+            "\u005b\u98de\u543b\u005d",
+            "\u005b\u98db\u543b\u005d",
+            "\u005b\u0042\u006c\u006f\u0077\u006b\u0069\u0073\u0073\u005d"
+        ],
+        "alias": "飞吻",
+        "webFile": "QQ经典/91.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/92.png",
+        "key": [
+            "/:jump",
+            "/跳跳",
+            "[跳跳]",
+            "[Waddle]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u006a\u0075\u006d\u0070",
+            "\u002f\u8df3\u8df3",
+            "\u005b\u8df3\u8df3\u005d",
+            "\u005b\u0057\u0061\u0064\u0064\u006c\u0065\u005d"
+        ],
+        "alias": "跳跳",
+        "webFile": "QQ经典/92.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/93.png",
+        "key": [
+            "/:shake",
+            "/发抖",
+            "[发抖]",
+            "[發抖]",
+            "[Tremble]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0073\u0068\u0061\u006b\u0065",
+            "\u002f\u53d1\u6296",
+            "\u005b\u53d1\u6296\u005d",
+            "\u005b\u767c\u6296\u005d",
+            "\u005b\u0054\u0072\u0065\u006d\u0062\u006c\u0065\u005d"
+        ],
+        "alias": "发抖",
+        "webFile": "QQ经典/93.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/94.png",
+        "key": [
+            "/:<O>",
+            "/怄火",
+            "[怄火]",
+            "[噴火]",
+            "[Aaagh!]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003c\u004f\u003e",
+            "\u002f\u6004\u706b",
+            "\u005b\u6004\u706b\u005d",
+            "\u005b\u5674\u706b\u005d",
+            "\u005b\u0041\u0061\u0061\u0067\u0068\u0021\u005d"
+        ],
+        "alias": "怄火",
+        "webFile": "QQ经典/94.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/95.png",
+        "key": [
+            "/:circle",
+            "/转圈",
+            "[转圈]",
+            "[轉圈]",
+            "[Twirl]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0063\u0069\u0072\u0063\u006c\u0065",
+            "\u002f\u8f6c\u5708",
+            "\u005b\u8f6c\u5708\u005d",
+            "\u005b\u8f49\u5708\u005d",
+            "\u005b\u0054\u0077\u0069\u0072\u006c\u005d"
+        ],
+        "alias": "转圈",
+        "webFile": "QQ经典/95.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/96.png",
+        "key": [
+            "/:kotow",
+            "/磕头",
+            "[磕头]",
+            "[磕頭]",
+            "[Kotow]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u006b\u006f\u0074\u006f\u0077",
+            "\u002f\u78d5\u5934",
+            "\u005b\u78d5\u5934\u005d",
+            "\u005b\u78d5\u982d\u005d",
+            "\u005b\u004b\u006f\u0074\u006f\u0077\u005d"
+        ],
+        "alias": "磕头",
+        "webFile": "QQ经典/96.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/97.png",
+        "key": [
+            "/:turn",
+            "/回头",
+            "[回头]",
+            "[回頭]",
+            "[Dramatic]",
+            "[Lookback]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0074\u0075\u0072\u006e",
+            "\u002f\u56de\u5934",
+            "\u005b\u56de\u5934\u005d",
+            "\u005b\u56de\u982d\u005d",
+            "\u005b\u0044\u0072\u0061\u006d\u0061\u0074\u0069\u0063\u005d",
+            "\u005b\u004c\u006f\u006f\u006b\u0062\u0061\u0063\u006b\u005d"
+        ],
+        "alias": "回头",
+        "webFile": "QQ经典/97.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/98.png",
+        "key": [
+            "/:skip",
+            "/跳绳",
+            "[跳绳]",
+            "[跳繩]",
+            "[JumpRope]",
+            "[Jump]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0073\u006b\u0069\u0070",
+            "\u002f\u8df3\u7ef3",
+            "\u005b\u8df3\u7ef3\u005d",
+            "\u005b\u8df3\u7e69\u005d",
+            "\u005b\u004a\u0075\u006d\u0070\u0052\u006f\u0070\u0065\u005d",
+            "\u005b\u004a\u0075\u006d\u0070\u005d"
+        ],
+        "alias": "跳绳",
+        "webFile": "QQ经典/98.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/99.png",
+        "key": [
+            "/:oY",
+            "/挥手",
+            "[投降]",
+            "[Surrender]",
+            "[挥手]",
+            "[Give-in]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u006f\u0059",
+            "\u002f\u6325\u624b",
+            "\u005b\u6295\u964d\u005d",
+            "\u005b\u0053\u0075\u0072\u0072\u0065\u006e\u0064\u0065\u0072\u005d",
+            "\u005b\u6325\u624b\u005d",
+            "\u005b\u0047\u0069\u0076\u0065\u002d\u0069\u006e\u005d"
+        ],
+        "alias": "投降",
+        "webFile": "QQ经典/99.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/100.png",
+        "key": [
+            "/:#-0",
+            "/激动",
+            "[激动]",
+            "[激動]",
+            "[Hooray]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0023\u002d\u0030",
+            "\u002f\u6fc0\u52a8",
+            "\u005b\u6fc0\u52a8\u005d",
+            "\u005b\u6fc0\u52d5\u005d",
+            "\u005b\u0048\u006f\u006f\u0072\u0061\u0079\u005d"
+        ],
+        "alias": "激动",
+        "webFile": "QQ经典/100.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/101.png",
+        "key": [
+            "/:hiphot",
+            "/街舞",
+            "[乱舞]",
+            "[亂舞]",
+            "[Meditate]",
+            "[街舞]",
+            "[HeyHey]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0068\u0069\u0070\u0068\u006f\u0074",
+            "\u002f\u8857\u821e",
+            "\u005b\u4e71\u821e\u005d",
+            "\u005b\u4e82\u821e\u005d",
+            "\u005b\u004d\u0065\u0064\u0069\u0074\u0061\u0074\u0065\u005d",
+            "\u005b\u8857\u821e\u005d",
+            "\u005b\u0048\u0065\u0079\u0048\u0065\u0079\u005d"
+        ],
+        "alias": "街舞",
+        "webFile": "QQ经典/101.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/102.png",
+        "key": [
+            "/:kiss",
+            "/献吻",
+            "[献吻]",
+            "[獻吻]",
+            "[Smooch]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u006b\u0069\u0073\u0073",
+            "\u002f\u732e\u543b",
+            "\u005b\u732e\u543b\u005d",
+            "\u005b\u737b\u543b\u005d",
+            "\u005b\u0053\u006d\u006f\u006f\u0063\u0068\u005d"
+        ],
+        "alias": "献吻",
+        "webFile": "QQ经典/102.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/103.png",
+        "key": [
+            "/:<&",
+            "/左太极",
+            "[左太极]",
+            "[左太極]",
+            "[TaiChi L]",
+            "[TaiJi L]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u003c\u0026",
+            "\u002f\u5de6\u592a\u6781",
+            "\u005b\u5de6\u592a\u6781\u005d",
+            "\u005b\u5de6\u592a\u6975\u005d",
+            "\u005b\u0054\u0061\u0069\u0043\u0068\u0069\u0020\u004c\u005d",
+            "\u005b\u0054\u0061\u0069\u004a\u0069\u0020\u004c\u005d"
+        ],
+        "alias": "左太极",
+        "webFile": "QQ经典/103.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "smileys/104.png",
+        "key": [
+            "/:&>",
+            "/右太极",
+            "[右太极]",
+            "[右太極]",
+            "[TaiChi R]",
+            "[TaiJi R]"
+        ],
+        "unicode": [
+            "\u002f\u003a\u0026\u003e",
+            "\u002f\u53f3\u592a\u6781",
+            "\u005b\u53f3\u592a\u6781\u005d",
+            "\u005b\u53f3\u592a\u6975\u005d",
+            "\u005b\u0054\u0061\u0069\u0043\u0068\u0069\u0020\u0052\u005d",
+            "\u005b\u0054\u0061\u0069\u004a\u0069\u0020\u0052\u005d"
+        ],
+        "alias": "右太极",
+        "webFile": "QQ经典/104.png",
+        "type": "QQ经典"
+    },
+    {
+        "file": "newemoji/smiley_39b.png",
+        "key": [
+            "[再见]",
+            "[再見]",
+            "[Bye]"
+        ],
+        "unicode": [
+            "\u005b\u518d\u89c1\u005d",
+            "\u005b\u518d\u898b\u005d",
+            "\u005b\u0042\u0079\u0065\u005d"
+        ],
+        "alias": "再见",
+        "webFile": "微信经典/smiley_39b.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/smiley_83b.png",
+        "key": [
+            "[抱拳]",
+            "[Salute]"
+        ],
+        "unicode": [
+            "\u005b\u62b1\u62f3\u005d",
+            "\u005b\u0053\u0061\u006c\u0075\u0074\u0065\u005d"
+        ],
+        "alias": "抱拳",
+        "webFile": "微信经典/smiley_83b.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/smiley_17b.png",
+        "key": [
+            "[Blush]",
+            "[囧]"
+        ],
+        "unicode": [
+            "\u005b\u0042\u006c\u0075\u0073\u0068\u005d",
+            "\u005b\u56e7\u005d"
+        ],
+        "alias": "囧",
+        "webFile": "微信经典/smiley_17b.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/2_02.png",
+        "key": [
+            "[奸笑]",
+            "[Smirk]"
+        ],
+        "unicode": [
+            "\u005b\u5978\u7b11\u005d",
+            "\u005b\u0053\u006d\u0069\u0072\u006b\u005d"
+        ],
+        "alias": "奸笑",
+        "webFile": "微信经典/2_02.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/2_04.png",
+        "key": [
+            "[嘿哈]",
+            "[Hey]",
+            "[吼嘿]"
+        ],
+        "unicode": [
+            "\u005b\u563f\u54c8\u005d",
+            "\u005b\u0048\u0065\u0079\u005d",
+            "\u005b\u543c\u563f\u005d"
+        ],
+        "alias": "嘿哈",
+        "webFile": "微信经典/2_04.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/2_05.png",
+        "key": [
+            "[捂脸]",
+            "[Facepalm]",
+            "[掩面]"
+        ],
+        "unicode": [
+            "\u005b\u6342\u8138\u005d",
+            "\u005b\u0046\u0061\u0063\u0065\u0070\u0061\u006c\u006d\u005d",
+            "\u005b\u63a9\u9762\u005d"
+        ],
+        "alias": "捂脸",
+        "webFile": "微信经典/2_05.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/2_06.png",
+        "key": [
+            "[机智]",
+            "[Smart]",
+            "[機智]"
+        ],
+        "unicode": [
+            "\u005b\u673a\u667a\u005d",
+            "\u005b\u0053\u006d\u0061\u0072\u0074\u005d",
+            "\u005b\u6a5f\u667a\u005d"
+        ],
+        "alias": "机智",
+        "webFile": "微信经典/2_06.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/2_07.png",
+        "key": [
+            "[茶]",
+            "[Tea]"
+        ],
+        "unicode": [
+            "\u005b\u8336\u005d",
+            "\u005b\u0054\u0065\u0061\u005d"
+        ],
+        "alias": "茶",
+        "webFile": "微信经典/2_07.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/2_09.png",
+        "key": [
+            "[红包]",
+            "[Packet]"
+        ],
+        "unicode": [
+            "\u005b\u7ea2\u5305\u005d",
+            "\u005b\u0050\u0061\u0063\u006b\u0065\u0074\u005d"
+        ],
+        "alias": "红包",
+        "webFile": "微信经典/2_09.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/2_10.png",
+        "key": [
+            "[蜡烛]",
+            "[Candle]",
+            "[蠟燭]"
+        ],
+        "unicode": [
+            "\u005b\u8721\u70db\u005d",
+            "\u005b\u0043\u0061\u006e\u0064\u006c\u0065\u005d",
+            "\u005b\u881f\u71ed\u005d"
+        ],
+        "alias": "蜡烛",
+        "webFile": "微信经典/2_10.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/2_11.png",
+        "key": [
+            "[耶]",
+            "[Yeah!]",
+            "[歐耶]"
+        ],
+        "unicode": [
+            "\u005b\u8036\u005d",
+            "\u005b\u0059\u0065\u0061\u0068\u0021\u005d",
+            "\u005b\u6b50\u8036\u005d"
+        ],
+        "alias": "耶",
+        "webFile": "微信经典/2_11.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/2_12.png",
+        "key": [
+            "[皱眉]",
+            "[Concerned]",
+            "[皺眉]"
+        ],
+        "unicode": [
+            "\u005b\u76b1\u7709\u005d",
+            "\u005b\u0043\u006f\u006e\u0063\u0065\u0072\u006e\u0065\u0064\u005d",
+            "\u005b\u76ba\u7709\u005d"
+        ],
+        "alias": "皱眉",
+        "webFile": "微信经典/2_12.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/2_14.png",
+        "key": [
+            "[鸡]",
+            "[Chick]",
+            "[小雞]"
+        ],
+        "unicode": [
+            "\u005b\u9e21\u005d",
+            "\u005b\u0043\u0068\u0069\u0063\u006b\u005d",
+            "\u005b\u5c0f\u96de\u005d"
+        ],
+        "alias": "鸡",
+        "webFile": "微信经典/2_14.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/2_15.png",
+        "key": [
+            "[福]",
+            "[Blessing]"
+        ],
+        "unicode": [
+            "\u005b\u798f\u005d",
+            "\u005b\u0042\u006c\u0065\u0073\u0073\u0069\u006e\u0067\u005d"
+        ],
+        "alias": "福",
+        "webFile": "微信经典/2_15.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/2_16.png",
+        "key": [
+            "[發]",
+            "[Rich]"
+        ],
+        "unicode": [
+            "\u005b\u767c\u005d",
+            "\u005b\u0052\u0069\u0063\u0068\u005d"
+        ],
+        "alias": "發",
+        "webFile": "微信经典/2_16.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/2_17.png",
+        "key": [
+            "[小狗]",
+            "[Pup]"
+        ],
+        "unicode": [
+            "\u005b\u5c0f\u72d7\u005d",
+            "\u005b\u0050\u0075\u0070\u005d"
+        ],
+        "alias": "小狗",
+        "webFile": "微信经典/2_17.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/Watermelon.png",
+        "key": [
+            "[吃瓜]",
+            "[Onlooker]",
+            "[吃西瓜]"
+        ],
+        "unicode": [
+            "\u005b\u5403\u74dc\u005d",
+            "\u005b\u004f\u006e\u006c\u006f\u006f\u006b\u0065\u0072\u005d",
+            "\u005b\u5403\u897f\u74dc\u005d"
+        ],
+        "alias": "吃瓜",
+        "webFile": "微信经典/Watermelon.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/Addoil.png",
+        "key": [
+            "[加油]",
+            "[GoForIt]"
+        ],
+        "unicode": [
+            "\u005b\u52a0\u6cb9\u005d",
+            "\u005b\u0047\u006f\u0046\u006f\u0072\u0049\u0074\u005d"
+        ],
+        "alias": "加油",
+        "webFile": "微信经典/Addoil.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/Sweat.png",
+        "key": [
+            "[汗]",
+            "[Sweats]"
+        ],
+        "unicode": [
+            "\u005b\u6c57\u005d",
+            "\u005b\u0053\u0077\u0065\u0061\u0074\u0073\u005d"
+        ],
+        "alias": "汗",
+        "webFile": "微信经典/Sweat.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/Shocked!.png",
+        "key": [
+            "[天啊]",
+            "[OMG]"
+        ],
+        "unicode": [
+            "\u005b\u5929\u554a\u005d",
+            "\u005b\u004f\u004d\u0047\u005d"
+        ],
+        "alias": "天啊",
+        "webFile": "微信经典/Shocked!.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/Cold.png",
+        "key": [
+            "[Emm]",
+            "[一言難盡]"
+        ],
+        "unicode": [
+            "\u005b\u0045\u006d\u006d\u005d",
+            "\u005b\u4e00\u8a00\u96e3\u76e1\u005d"
+        ],
+        "alias": "Emm",
+        "webFile": "微信经典/Cold.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/Social.png",
+        "key": [
+            "[社会社会]",
+            "[Respect]",
+            "[失敬失敬]"
+        ],
+        "unicode": [
+            "\u005b\u793e\u4f1a\u793e\u4f1a\u005d",
+            "\u005b\u0052\u0065\u0073\u0070\u0065\u0063\u0074\u005d",
+            "\u005b\u5931\u656c\u5931\u656c\u005d"
+        ],
+        "alias": "社会社会",
+        "webFile": "微信经典/Social.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/Yellowdog.png",
+        "key": [
+            "[旺柴]",
+            "[Doge]"
+        ],
+        "unicode": [
+            "\u005b\u65fa\u67f4\u005d",
+            "\u005b\u0044\u006f\u0067\u0065\u005d"
+        ],
+        "alias": "旺柴",
+        "webFile": "微信经典/Yellowdog.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/NoProb.png",
+        "key": [
+            "[好的]",
+            "[NoProb]"
+        ],
+        "unicode": [
+            "\u005b\u597d\u7684\u005d",
+            "\u005b\u004e\u006f\u0050\u0072\u006f\u0062\u005d"
+        ],
+        "alias": "好的",
+        "webFile": "微信经典/NoProb.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/Slap.png",
+        "key": [
+            "[打脸]",
+            "[MyBad]",
+            "[打臉]"
+        ],
+        "unicode": [
+            "\u005b\u6253\u8138\u005d",
+            "\u005b\u004d\u0079\u0042\u0061\u0064\u005d",
+            "\u005b\u6253\u81c9\u005d"
+        ],
+        "alias": "打脸",
+        "webFile": "微信经典/Slap.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/Wow!.png",
+        "key": [
+            "[哇]",
+            "[Wow]"
+        ],
+        "unicode": [
+            "\u005b\u54c7\u005d",
+            "\u005b\u0057\u006f\u0077\u005d"
+        ],
+        "alias": "哇",
+        "webFile": "微信经典/Wow!.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "newemoji/KeepFighting.png",
+        "key": [
+            "[加油加油]",
+            "[KeepFighting]",
+            "[加油！]"
+        ],
+        "unicode": [
+            "\u005b\u52a0\u6cb9\u52a0\u6cb9\u005d",
+            "\u005b\u004b\u0065\u0065\u0070\u0046\u0069\u0067\u0068\u0074\u0069\u006e\u0067\u005d",
+            "\u005b\u52a0\u6cb9\uff01\u005d"
+        ],
+        "alias": "加油加油",
+        "webFile": "微信经典/KeepFighting.png",
+        "type": "微信经典"
+    },
+    {
+        "file": "smileys/e344.png",
+        "key": [
+            "🍣",
+            ""
+        ],
+        "unicode": [
+            "\ud83c\udf63",
+            "\ue344"
+        ],
+        "alias": "寿司",
+        "webFile": "emoji/e344.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e112.png",
+        "key": [
+            "🎁",
+            ""
+        ],
+        "unicode": [
+            "\ud83c\udf81",
+            "\ue112"
+        ],
+        "alias": "礼物",
+        "webFile": "emoji/e112.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e34b.png",
+        "key": [
+            "🎂",
+            ""
+        ],
+        "unicode": [
+            "\ud83c\udf82",
+            "\ue34b"
+        ],
+        "alias": "生日蛋糕",
+        "webFile": "emoji/e34b.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e312.png",
+        "key": [
+            "🎉",
+            ""
+        ],
+        "unicode": [
+            "\ud83c\udf89",
+            "\ue312"
+        ],
+        "alias": "庆祝",
+        "webFile": "emoji/e312.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e03c.png",
+        "key": [
+            "🎤",
+            ""
+        ],
+        "unicode": [
+            "\ud83c\udfa4",
+            "\ue03c"
+        ],
+        "alias": "麦克风",
+        "webFile": "emoji/e03c.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e52e.png",
+        "key": [
+            "🐔",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\udc14",
+            "\ue52e"
+        ],
+        "alias": "鸡",
+        "webFile": "emoji/e52e.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e04f.png",
+        "key": [
+            "🐱",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\udc31",
+            "\ue04f"
+        ],
+        "alias": "猫脸",
+        "webFile": "emoji/e04f.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e054.png",
+        "key": [
+            "🐳",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\udc33",
+            "\ue054"
+        ],
+        "alias": "鲸鱼",
+        "webFile": "emoji/e054.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e10b.png",
+        "key": [
+            "🐷",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\udc37",
+            "\ue10b"
+        ],
+        "alias": "猪头",
+        "webFile": "emoji/e10b.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e409.png",
+        "key": [
+            "👅",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\udc45",
+            "\ue409"
+        ],
+        "alias": "吐舌头",
+        "webFile": "emoji/e409.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e230.png",
+        "key": [
+            "👈",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\udc48",
+            "\ue230"
+        ],
+        "alias": "左边",
+        "webFile": "emoji/e230.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e231.png",
+        "key": [
+            "👉",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\udc49",
+            "\ue231"
+        ],
+        "alias": "右边",
+        "webFile": "emoji/e231.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e034.png",
+        "key": [
+            "💍",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\udc8d",
+            "\ue034"
+        ],
+        "alias": "戒指",
+        "webFile": "emoji/e034.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e03f.png",
+        "key": [
+            "🔑",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\udd11",
+            "\ue03f"
+        ],
+        "alias": "钥匙",
+        "webFile": "emoji/e03f.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e412.png",
+        "key": [
+            "😂",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\ude02",
+            "\ue412"
+        ],
+        "alias": "笑哭",
+        "webFile": "emoji/e412.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e056.png",
+        "key": [
+            "😊",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\ude0a",
+            "\ue056"
+        ],
+        "alias": "羞涩微笑",
+        "webFile": "emoji/e056.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e40e.png",
+        "key": [
+            "😒",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\ude12",
+            "\ue40e"
+        ],
+        "alias": "不高兴",
+        "webFile": "emoji/e40e.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e418.png",
+        "key": [
+            "😘",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\ude18",
+            "\ue418"
+        ],
+        "alias": "飞吻",
+        "webFile": "emoji/e418.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e417.png",
+        "key": [
+            "😚",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\ude1a",
+            "\ue417"
+        ],
+        "alias": "羞涩亲亲",
+        "webFile": "emoji/e417.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e105.png",
+        "key": [
+            "😜",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\ude1c",
+            "\ue105"
+        ],
+        "alias": "单眼吐舌",
+        "webFile": "emoji/e105.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e411.png",
+        "key": [
+            "😭",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\ude2d",
+            "\ue411"
+        ],
+        "alias": "放声大哭",
+        "webFile": "emoji/e411.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e107.png",
+        "key": [
+            "😱",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\ude31",
+            "\ue107"
+        ],
+        "alias": "吓死了",
+        "webFile": "emoji/e107.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e410.png",
+        "key": [
+            "😲",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\ude32",
+            "\ue410"
+        ],
+        "alias": "震惊",
+        "webFile": "emoji/e410.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e40d.png",
+        "key": [
+            "😳",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\ude33",
+            "\ue40d"
+        ],
+        "alias": "傻呆",
+        "webFile": "emoji/e40d.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e40c.png",
+        "key": [
+            "😷",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\ude37",
+            "\ue40c"
+        ],
+        "alias": "口罩",
+        "webFile": "emoji/e40c.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e403.png",
+        "key": [
+            "🙀",
+            ""
+        ],
+        "unicode": [
+            "\ud83d\ude40",
+            "\ue403"
+        ],
+        "alias": "忧郁",
+        "webFile": "emoji/e403.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e414.png",
+        "key": [
+            "☺",
+            ""
+        ],
+        "unicode": [
+            "\u263a",
+            "\ue414"
+        ],
+        "alias": "微笑",
+        "webFile": "emoji/e414.png",
+        "type": "emoji"
+    },
+    {
+        "file": "smileys/e32e.png",
+        "key": [
+            "✨",
+            ""
+        ],
+        "unicode": [
+            "\u2728",
+            "\ue32e"
+        ],
+        "alias": "闪亮",
+        "webFile": "emoji/e32e.png",
+        "type": "emoji"
+    }
+]
