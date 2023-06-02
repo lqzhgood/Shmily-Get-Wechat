@@ -7,7 +7,7 @@
 
 -   从 `1 decode db` 导出 `decrypted_database.db` 复制到 `input` 下
 -   修改 `config.js` 并填入需要导出的对方 `微信id`
--   执行 `node index`
+-   执行 `node run build`
 -   剪切生成的 `db-android_msg_res.json` `BLOB(原input目录)` `ImgInfo2.json` `emoji_key.txt` 复制到 `Wechat/${ToMsg}/input/JSON/db-android`
 
 ### 解密

@@ -1,18 +1,19 @@
 {
-  "name": "JSON_Handle",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "better-sqlite3": "^7.5.3",
-    "bluebird": "^3.7.2",
-    "fs-extra": "^10.0.1",
-    "lodash": "^4.17.21"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "JSON_Handle",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "better-sqlite3": "^7.5.3",
+        "bluebird": "^3.7.2",
+        "cross-env": "^7.0.3",
+        "fs-extra": "^10.0.1",
+        "lodash": "^4.17.21"
+    },
+    "scripts": {
+        "build": "cross-env JAVA_OPTS=-Xmx4096m node index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }
