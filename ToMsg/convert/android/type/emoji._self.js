@@ -1,38 +1,38 @@
-const _ = require('lodash');
-const path = require('path');
+const _ = require("lodash");
+const path = require("path");
 
-const { downFile, matchFile } = require('../../utils/matchFile.js');
-const { FILE_WEB_PUBLIC_DIR, FILE_DIR_OUT_DIR } = require('../../../config.js');
-const { findArrInArr } = require('../../../utils/index.js');
-const { SOURCE_DICT_DB_ANDROID } = require('../../dictMap.js');
+const { downFile, matchFile } = require("../../utils/matchFile.js");
+const { FILE_WEB_PUBLIC_DIR, FILE_DIR_OUT_DIR } = require("../../../config.js");
+const { findArrInArr } = require("../../../utils/index.js");
+const { SOURCE_DICT_DB_ANDROID } = require("../../dictMap.js");
 
-const EMOJI_INFO = require('../../../dist/emojiFileJson.json');
-const findEmojiByQQ = require('../../../lib/emojiByQQ/index.js');
+const EMOJI_INFO = require("../../../dist/_temp/emojiFileJson.json");
+const findEmojiByQQ = require("../../../lib/emojiByQQ/index.js");
 
 const WEB_DIR = `${FILE_WEB_PUBLIC_DIR}/${SOURCE_DICT_DB_ANDROID}`;
 const FILE_DIR = path.join(FILE_DIR_OUT_DIR, SOURCE_DICT_DB_ANDROID);
 
-const DIR_TYPE = 'emoji';
+const DIR_TYPE = "emoji";
 
-const { thSrcHandle } = require('../../utils/type.js');
+const { thSrcHandle } = require("../../utils/type.js");
 
 async function emoji_self(v, merger) {
     let webUrl;
-    let desc = '未知';
-    let packName = '其他';
+    let desc = "未知";
+    let packName = "其他";
 
-    const appmsg = _.get(v, 'content.msg.appmsg', {});
+    const appmsg = _.get(v, "content.msg.appmsg", {});
 
-    const urls = [_.get(appmsg, 'url')];
+    const urls = [_.get(appmsg, "url")];
     const md5s = [
-        _.get(appmsg, 'appattach.emoticonmd5'),
-        _.get(appmsg, 'appattach.cdnthumbmd5'),
-        thSrcHandle(_.get(v, 'imgPath')),
+        _.get(appmsg, "appattach.emoticonmd5"),
+        _.get(appmsg, "appattach.cdnthumbmd5"),
+        thSrcHandle(_.get(v, "imgPath")),
     ];
 
     // imgPath: 'THUMBNAIL_DIRPATH://th_8c63c984d52d5f08e77e0ff6f1fd4911',
 
-    const f = findArrInArr(EMOJI_INFO, md5s, 'md5');
+    const f = findArrInArr(EMOJI_INFO, md5s, "md5");
 
     if (f) {
         merger.key.db_wx = f;
@@ -52,7 +52,10 @@ async function emoji_self(v, merger) {
     const findByQQ = findEmojiByQQ(md5s);
     if (findByQQ) {
         merger.key.db_qq = f;
-        console.log('findByQQ 这都能匹配到!!! 赶紧去 Github 催作者补全这段代码吧', findByQQ);
+        console.log(
+            "findByQQ 这都能匹配到!!! 赶紧去 Github 催作者补全这段代码吧",
+            findByQQ
+        );
     }
 
     return { webUrl, desc, packName };

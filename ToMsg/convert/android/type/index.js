@@ -1,29 +1,29 @@
-const _ = require('lodash');
-const path = require('path');
-const { FILE_WEB_PUBLIC_DIR, FILE_DIR_OUT_DIR } = require('../../../config');
+const _ = require("lodash");
+const path = require("path");
+const { FILE_WEB_PUBLIC_DIR, FILE_DIR_OUT_DIR } = require("../../../config");
 
-const { TYPE_DICT, SOURCE_DICT_DB_ANDROID } = require('../../dictMap');
-const { matchFile, downFile } = require('../../utils/matchFile.js');
+const { TYPE_DICT, SOURCE_DICT_DB_ANDROID } = require("../../dictMap");
+const { matchFile, downFile } = require("../../utils/matchFile.js");
 
 const source = SOURCE_DICT_DB_ANDROID;
 const FILE_DIR = path.join(FILE_DIR_OUT_DIR, source);
 const WEB_DIR = `${FILE_WEB_PUBLIC_DIR}/${source}`;
 
-const APP_INFO = require('../../../dist/appInfo.json');
+const APP_INFO = require("../../../dist/_temp/appInfo.json");
 
-const TYPE_TEXT = require('./text.js');
-const TYPE_FILE = require('./file.js');
-const TYPE_IMAGE2 = require('./image2.js');
-const TYPE_VOICE2 = require('./voice2.js');
-const TYPE_VIDEO = require('./video.js');
-const TYPE_VOIP = require('./voip.js');
-const TYPE_EMOJI_STORE = require('./emoji_store.js');
-const TYPE_EMOJI_SELF = require('./emoji._self.js');
-const TYPE_APP = require('./app.js');
-const TYPE_SHARE = require('./share.js');
-const TYPE_SYSTEM = require('./system.js');
-const TYPE_USER_CARD = require('./userCard.js');
-const TYPE_LOCATION = require('./location.js');
+const TYPE_TEXT = require("./text.js");
+const TYPE_FILE = require("./file.js");
+const TYPE_IMAGE2 = require("./image2.js");
+const TYPE_VOICE2 = require("./voice2.js");
+const TYPE_VIDEO = require("./video.js");
+const TYPE_VOIP = require("./voip.js");
+const TYPE_EMOJI_STORE = require("./emoji_store.js");
+const TYPE_EMOJI_SELF = require("./emoji._self.js");
+const TYPE_APP = require("./app.js");
+const TYPE_SHARE = require("./share.js");
+const TYPE_SYSTEM = require("./system.js");
+const TYPE_USER_CARD = require("./userCard.js");
+const TYPE_LOCATION = require("./location.js");
 
 /**
  * @name:
@@ -35,22 +35,26 @@ const TYPE_LOCATION = require('./location.js');
  * @return {*}
  */
 async function handleType(type, v, ov, merger) {
-    const msg = _.get(v, 'content.msg', {});
-    const appmsg = _.get(v, 'content.msg.appmsg', {});
+    const msg = _.get(v, "content.msg", {});
+    const appmsg = _.get(v, "content.msg.appmsg", {});
     const { title, des, thumburl, md5 } = appmsg;
 
     // 如果 appinfo 有id 则补充 icon
     const { appid } = appmsg;
     if (appid) {
-        const f = APP_INFO.find(a => a.appId === appid);
+        const f = APP_INFO.find((a) => a.appId === appid);
         if (f) {
-            if (!_.get(v, 'content.msg.appinfo.appname')) {
-                _.set(v, 'content.msg.appinfo.appname', f.appName);
+            if (!_.get(v, "content.msg.appinfo.appname")) {
+                _.set(v, "content.msg.appinfo.appname", f.appName);
             }
             const icons = [f.appIconUrl, f.appWatermarkUrl];
-            const appIcon = await downFile(icons, `${WEB_DIR}/app`, `${FILE_DIR}/app`);
+            const appIcon = await downFile(
+                icons,
+                `${WEB_DIR}/app`,
+                `${FILE_DIR}/app`
+            );
             if (appIcon) {
-                _.set(v, 'content.msg.appinfo.$appicon', appIcon);
+                _.set(v, "content.msg.appinfo.$appicon", appIcon);
             }
         }
     }
@@ -79,13 +83,16 @@ async function handleType(type, v, ov, merger) {
         case TYPE_DICT.撤回:
             // 未处理  没有这类消息的样本
             return {
-                html: '撤回',
+                html: "撤回",
             };
         case TYPE_DICT.名片: {
             merger.data.$url_cover = await TYPE_USER_CARD(msg, v);
             merger.data.msg = msg;
             return {
-                html: `<h4>${_.get(msg, 'nickname')}</h4><p>${_.get(msg, 'sign')}</p><p>${_.get(msg, 'alias')}</p>`,
+                html: `<h4>${_.get(msg, "nickname")}</h4><p>${_.get(
+                    msg,
+                    "sign"
+                )}</p><p>${_.get(msg, "alias")}</p>`,
             };
         }
         case TYPE_DICT.视频: {
@@ -101,7 +108,10 @@ async function handleType(type, v, ov, merger) {
             };
         }
         case TYPE_DICT._自定义表情_微信买的表情: {
-            const { webUrl, desc, packName } = await TYPE_EMOJI_STORE(v, merger);
+            const { webUrl, desc, packName } = await TYPE_EMOJI_STORE(
+                v,
+                merger
+            );
             merger.data.$packName = packName;
             merger.data.$desc = desc;
             merger.data.$url_emoji = webUrl;
@@ -137,7 +147,8 @@ async function handleType(type, v, ov, merger) {
         // 49
 
         case TYPE_DICT._含链接消息:
-            if (title !== des) throw new Error(`含链接消息 title des 不相同 ${title} ${des}`);
+            if (title !== des)
+                throw new Error(`含链接消息 title des 不相同 ${title} ${des}`);
             return {
                 type: TYPE_DICT.消息,
                 html: title,
@@ -195,7 +206,8 @@ async function handleType(type, v, ov, merger) {
             merger.data.$url_link = link;
             return {
                 html: `<p>${
-                    _.get(appmsg, 'sourcedisplayname') || _.get(v, 'content.msg.appinfo.appname')
+                    _.get(appmsg, "sourcedisplayname") ||
+                    _.get(v, "content.msg.appinfo.appname")
                 }</p><h4>${title}</h4><p>${des}</p>`,
             };
         }
@@ -207,13 +219,13 @@ async function handleType(type, v, ov, merger) {
 
         case TYPE_DICT.红包: {
             merger.data.appmsg = appmsg;
-            const paySenderTitle = _.get(appmsg, 'wcpayinfo.sendertitle');
+            const paySenderTitle = _.get(appmsg, "wcpayinfo.sendertitle");
             return {
                 html: `<h4>${paySenderTitle}</h4>`,
             };
         }
         default:
-            console.error('未知类型 处理方式', type);
+            console.error("未知类型 处理方式", type);
             // throw new Error(`unknown Type ${JSON.stringify(v)}`);
             return {
                 html: JSON.stringify(v, null, 4),

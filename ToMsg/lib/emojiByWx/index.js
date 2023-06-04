@@ -1,38 +1,50 @@
-const _ = require('lodash');
-const path = require('path');
-const fs = require('fs-extra');
+const _ = require("lodash");
+const path = require("path");
+const fs = require("fs-extra");
 
-const { getJSON } = require(path.join(__dirname, '../../utils/index.js'));
+const { getJSON } = require(path.join(__dirname, "../../utils/index.js"));
 
 // android
-const EmojiGroupInfo = getJSON(path.join(__dirname, '../../input/JSON/android/EmojiGroupInfo.json'), []);
-const EmotionDetailInfo = getJSON(path.join(__dirname, '../../input/JSON/android/EmotionDetailInfo.json'), []);
-const EmojiInfo = getJSON(path.join(__dirname, '../../input/JSON/android/EmojiInfo.json'), []);
-const EmojiInfoDesc = getJSON(path.join(__dirname, '../../input/JSON/android/EmojiInfoDesc.json'), []);
+const EmojiGroupInfo = getJSON(
+    path.join(__dirname, "../../input/JSON/android/EmojiGroupInfo.json"),
+    []
+);
+const EmotionDetailInfo = getJSON(
+    path.join(__dirname, "../../input/JSON/android/EmotionDetailInfo.json"),
+    []
+);
+const EmojiInfo = getJSON(
+    path.join(__dirname, "../../input/JSON/android/EmojiInfo.json"),
+    []
+);
+const EmojiInfoDesc = getJSON(
+    path.join(__dirname, "../../input/JSON/android/EmojiInfoDesc.json"),
+    []
+);
 
 const parkGroup = []
     .concat(
-        EmojiGroupInfo.map(v => _.pick(v, ['productID', 'packName'])),
-        EmotionDetailInfo.map(v => _.pick(v, ['productID', 'packName'])),
+        EmojiGroupInfo.map((v) => _.pick(v, ["productID", "packName"])),
+        EmotionDetailInfo.map((v) => _.pick(v, ["productID", "packName"]))
     )
-    .map(v => {
-        v.packName = v.packName.replaceAll('\b', '').trim();
+    .map((v) => {
+        v.packName = v.packName.replaceAll("\b", "").trim();
         return v;
     })
-    .filter(v => v.packName);
+    .filter((v) => v.packName);
 
-const emojiParkGroup = _(parkGroup).uniqBy('productID').value();
+const emojiParkGroup = _(parkGroup).uniqBy("productID").value();
 
-const emojiDesWeight = ['zh_cn', 'default', 'zh_hk', 'zh_tw', 'en'];
+const emojiDesWeight = ["zh_cn", "default", "zh_hk", "zh_tw", "en"];
 
-const emojiDesGroup = EmojiInfoDesc.map(v => {
-    const _v = _.pick(v, ['md5', 'groupId', 'lang', 'desc']);
+const emojiDesGroup = EmojiInfoDesc.map((v) => {
+    const _v = _.pick(v, ["md5", "groupId", "lang", "desc"]);
     _v.desc = _v.desc.trim();
     return _v;
 })
-    .filter(v => v.desc)
+    .filter((v) => v.desc)
     .reduce((pre, cV) => {
-        let f = pre.find(v => v.md5 === cV.md5);
+        let f = pre.find((v) => v.md5 === cV.md5);
 
         if (!f) {
             pre.push(cV);
@@ -40,7 +52,7 @@ const emojiDesGroup = EmojiInfoDesc.map(v => {
             const fW = emojiDesWeight.indexOf(f.lang);
             const cW = emojiDesWeight.indexOf(cV.lang);
             if (fW === -1 || cW === -1) {
-                console.log('表情描述权重未知', f.lang, cV.lang);
+                console.log("表情描述权重未知", f.lang, cV.lang);
             } else {
                 if (fW < cW) {
                     f.desc = cV.desc;
@@ -51,8 +63,10 @@ const emojiDesGroup = EmojiInfoDesc.map(v => {
         return pre;
     }, []);
 
-const emojiFileGroup = EmojiInfo.map(v => _.pick(v, ['md5', 'groupId', 'cdnUrl', 'thumbUrl'])).map(v => {
-    const f = emojiDesGroup.find(v2 => v2.md5 === v.md5);
+const emojiFileGroup = EmojiInfo.map((v) =>
+    _.pick(v, ["md5", "groupId", "cdnUrl", "thumbUrl"])
+).map((v) => {
+    const f = emojiDesGroup.find((v2) => v2.md5 === v.md5);
     if (!f) {
         // console.log('表情描述未知', v.md5);
     } else {
@@ -63,7 +77,7 @@ const emojiFileGroup = EmojiInfo.map(v => _.pick(v, ['md5', 'groupId', 'cdnUrl',
         }
 
         if (v.groupId !== f.groupId) {
-            console.log('表情描述 groundId 不匹配', v, f);
+            console.log("表情描述 groundId 不匹配", v, f);
         } else {
             v.desc = f.desc;
             _.pull(emojiDesGroup, f);
@@ -72,16 +86,16 @@ const emojiFileGroup = EmojiInfo.map(v => _.pick(v, ['md5', 'groupId', 'cdnUrl',
     return v;
 });
 
-const emojiJson = emojiFileGroup.map(v => {
+const emojiJson = emojiFileGroup.map((v) => {
     if (!v.groupId) return v;
 
-    const f = emojiParkGroup.find(v2 => v2.productID === v.groupId);
+    const f = emojiParkGroup.find((v2) => v2.productID === v.groupId);
 
     if (f) {
         v.packName = f.packName;
     } else {
-        if (v.groupId.startsWith('com.tencent')) {
-            v.packName = v.groupId.split('.').slice(-1)[0];
+        if (v.groupId.startsWith("com.tencent")) {
+            v.packName = v.groupId.split(".").slice(-1)[0];
         } else {
             v.packName = v.groupId;
         }
@@ -90,11 +104,18 @@ const emojiJson = emojiFileGroup.map(v => {
 });
 
 const repoJson = fs
-    .readdirSync(path.join(__dirname, './repo/'))
-    .filter(v => path.extname(v) === '.json')
-    .reduce((pre, f) => [].concat(pre, fs.readJsonSync(path.join(__dirname, `./repo/${f}`))), []);
+    .readdirSync(path.join(__dirname, "./repo/"))
+    .filter((v) => path.extname(v) === ".json")
+    .reduce(
+        (pre, f) =>
+            [].concat(
+                pre,
+                fs.readJsonSync(path.join(__dirname, `./repo/${f}`))
+            ),
+        []
+    );
 
 fs.writeFileSync(
-    path.join(__dirname, '../../dist/emojiFileJson.json'),
-    JSON.stringify([].concat(emojiJson, repoJson), null, 4),
+    path.join(__dirname, "../../dist/_temp/emojiFileJson.json"),
+    JSON.stringify([].concat(emojiJson, repoJson), null, 4)
 );
