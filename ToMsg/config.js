@@ -6,6 +6,8 @@ const config = {
     leftNum: "", // 对方的微信id
     leftName: "", // 对方的微信名字
 
+    Device: "Phone",
+
     // 此次资源的标识符 会作为以下用途
     // [数据文件].json
     // [资源文件] 夹名称   /data/${rootPath}/**.*
