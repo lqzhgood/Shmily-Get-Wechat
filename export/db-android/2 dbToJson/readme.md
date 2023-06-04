@@ -7,8 +7,26 @@
 
 -   从 `1 decode db` 导出 `decrypted_database.db` 复制到 `input` 下
 -   修改 `config.js` 并填入需要导出的对方 `微信id`
+
+    -   获取方式详见 #### 获取微信号
+
 -   执行 `node run build`
 -   剪切生成的 `db-android_msg_res.json` `BLOB(原input目录)` `ImgInfo2.json` `emoji_key.txt` 复制到 `Wechat/${ToMsg}/input/JSON/db-android`
+
+#### 获取微信号
+
+可以通过以下方式获取
+
+1. 通过微信查看对方 `微信号` ，微信号可以修改，所以可能数据库中有多个
+
+    ![weixin_name](./doc/screen/wexin_name.png)
+
+2. 通过数据库查看
+   `export\db-android\1 decode db\ViewDB\wxsqlcipher\wxsqlcipher.exe` 打开数据库 `decrypted_database.db`
+
+    按图搜索消息内容找到对应的 `talker`
+
+    ![talker](./doc/screen/talker.png)
 
 ### 解密
 

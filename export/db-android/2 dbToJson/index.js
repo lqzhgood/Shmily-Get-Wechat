@@ -20,8 +20,8 @@ fs.removeSync("./input/decodeMessageTable.exe");
 console.log("FILTER_USER", FILTER_USER);
 fs.mkdirpSync("./dist/BLOB/");
 
-const msg = require("./input/message.json").filter(
-    (v) => v.talker == FILTER_USER
+const msg = require("./input/message.json").filter((v) =>
+    FILTER_USER.includes(v.talker)
 );
 const res = msg.map((v) => {
     const { msgId } = v;
