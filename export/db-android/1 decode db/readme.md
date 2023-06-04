@@ -20,10 +20,11 @@ MIUI 可以看这个帖子 https://github.com/Heyxk/notes/issues/1
 
 -   没有 root,
 
-    - MIUI 可通过备份实现， 参考 https://github.com/Heyxk/notes/issues/1
+    -   MIUI 通过备份实现， 参考 https://github.com/Heyxk/notes/issues/1
+    -   华为 通过备份实现， 参考 https://1248.ink/?p=8
 
-    - 通过微信自带的数据迁移功能把本机数据迁移到带 `root` 的 Android 系统内微信
-    
+    -   通过微信自带的数据迁移功能把本机数据迁移到带 `root` 的 Android 系统内微信
+
         -   在手机上安装安卓虚拟机
 
             -   安卓虚拟机有 vmos 光速虚拟机 等
@@ -79,8 +80,7 @@ sudo apt-get update
 sudo apt-get install sqlcipher
 ```
 
-替换以下命令中 `${yourkey}` 为 __2__ 中获取的 key
-
+替换以下命令中 `${yourkey}` 为 **2** 中获取的 key
 
 ```
 sqlcipher EnMicroMsg.db 'PRAGMA key = "${yourkey}"; PRAGMA cipher_use_hmac = off; PRAGMA kdf_iter = 4000; ATTACH DATABASE "decrypted_database.db" AS decrypted_database KEY "";SELECT sqlcipher_export("decrypted_database");DETACH DATABASE decrypted_database;'
