@@ -5,12 +5,13 @@
 
 ### 使用
 
+-   安装 node 环境 [http://lqzhgood.github.io/Shmily/guide/setup-runtime/nodejs.html]
 -   从 `1 decode db` 导出 `decrypted_database.db` 复制到 `input` 下
 -   修改 `config.js` 并填入需要导出的对方 `微信id`
 
     -   获取方式详见 #### 获取微信号
 
--   执行 `node run build`
+-   执行 `npm run build`
 -   剪切生成的 `db-android_msg_res.json` `BLOB(原input目录)` `ImgInfo2.json` `emoji_key.txt` 复制到 `Wechat/${ToMsg}/input/JSON/db-android`
 
 #### 获取微信号
