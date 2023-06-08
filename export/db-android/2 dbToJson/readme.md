@@ -7,6 +7,8 @@
 
 -   安装 node 环境 [http://lqzhgood.github.io/Shmily/guide/setup-runtime/nodejs.html]
 -   从 `1 decode db` 导出 `decrypted_database.db` 复制到 `input` 下
+-   解压 `lib\decodeMessageTable\Releases\jre1.8.0_371.7z` 到 `input` 下
+    > 确保 `input\\jre1.8.0_371\bin\java.exe`
 -   修改 `config.js` 并填入需要导出的对方 `微信id`
 
     -   获取方式详见 #### 获取微信号
@@ -39,3 +41,7 @@
 
 -   `lvbuff` 字段不知道怎么解码,仅已知下列情况可用
     -   语音通话, utf-8 解码出描述文字(通话 xx 秒)
+
+#### FAQ
+
+-   报错 `Java heap space` --> [issues #2](https://github.com/lqzhgood/Shmily-Get-Wechat/issues/2)
