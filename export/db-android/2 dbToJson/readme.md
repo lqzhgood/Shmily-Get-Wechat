@@ -14,12 +14,12 @@
     -   获取方式详见 #### 获取微信号
 
 -   执行 `npm run build`
--   复制以下文件到 `/ToMsg/input/JSON/db-android`
+-   复制以下到 `/ToMsg/input/JSON/db-android`
     - `dist`
+        - `BLOB`
         - `db-android_msg_res.json`
-        - `ImgInfo2.json`
         - `emoji_key.txt`
-    - `input\BLOB`
+        - `ImgInfo2.json`
      
 
 #### 获取微信号
