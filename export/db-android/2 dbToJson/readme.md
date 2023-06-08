@@ -14,7 +14,13 @@
     -   获取方式详见 #### 获取微信号
 
 -   执行 `npm run build`
--   剪切生成的 `db-android_msg_res.json` `BLOB(原input目录)` `ImgInfo2.json` `emoji_key.txt` 复制到 `Wechat/${ToMsg}/input/JSON/db-android`
+-   复制以下文件到 `/ToMsg/input/JSON/db-android`
+    - `dist`
+        - `db-android_msg_res.json`
+        - `ImgInfo2.json`
+        - `emoji_key.txt`
+    - `input\BLOB`
+     
 
 #### 获取微信号
 
