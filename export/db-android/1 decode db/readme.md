@@ -73,6 +73,12 @@ MIUI 可以看这个帖子 https://github.com/Heyxk/notes/issues/1
 
 ### 3.1 使用 key 解密数据库
 
+#### 3.1.1 docker
+
+参考 `\export\db-android\1 decode db\docker\readme.md`
+
+#### 3.1.2 手动方式
+
 折腾后已知最简单的平台是 `ubuntu 20`. 尝试过 `CentOs` / `Windows` 下 sqlcipher 的依赖太难搞了
 
 ```
