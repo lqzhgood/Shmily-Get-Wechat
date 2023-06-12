@@ -12,8 +12,7 @@ fs.copyFileSync(
 );
 exec("decodeMessageTable.exe", {
     cwd: path.join(__dirname, "./input/"),
-    encoding: "utf8",
-    env: { JAVA_OPTS: "-Xmx4096m" },
+    encoding: "utf8"
 });
 fs.removeSync("./input/decodeMessageTable.exe");
 
