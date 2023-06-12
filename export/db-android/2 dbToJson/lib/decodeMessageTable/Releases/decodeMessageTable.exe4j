@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exe4j version="8.0.1" transformSequenceNumber="3">
+  <directoryPresets config="F:/1/decodeMessageTable/Releases" />
+  <application name="decodeMessageTable" distributionSourceDir="." />
+  <executable name="decodeMessageTable" wrapperType="embed" executableDir="." redirectStderr="false" executableMode="console" />
+  <java mainClass="decode.ReadTxt" vmParameters="-Xmx16384m" preferredVM="server" minVersion="18" maxVersion="20">
+    <searchSequence>
+      <directory location="./jre-1.8" />
+      <registry />
+      <envVar name="JAVA_HOME" />
+      <envVar name="JDK_HOME" />
+    </searchSequence>
+    <classPath>
+      <archive location="./decodeMessageTable.jar" failOnError="false" />
+    </classPath>
+  </java>
+</exe4j>

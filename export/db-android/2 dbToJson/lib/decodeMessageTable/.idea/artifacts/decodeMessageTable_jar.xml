@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="decodeMessageTable:jar">
+    <output-path>$PROJECT_DIR$/Releases</output-path>
+    <root id="archive" name="decodeMessageTable.jar">
+      <element id="module-output" name="decodeMessageTable" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/lib/dbunit-2.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/lib/fastjson-1.2.75.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/lib/slf4j-api-1.7.21.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/lib/sqlite-jdbc-3.19.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/lib/slf4j-log4j12-1.7.21.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

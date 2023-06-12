@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "dependencies": {
+        "7zip-min": "^1.4.4",
         "better-sqlite3": "^7.5.3",
         "bluebird": "^3.7.2",
         "fs-extra": "^10.0.1",
