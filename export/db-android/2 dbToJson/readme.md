@@ -9,7 +9,7 @@
 -   从 `1 decode db` 导出 `decrypted_database.db` 复制到 `input` 下
 -   修改 `config.js` 并填入需要导出的对方 `微信id`
 
-    -   获取方式详见 #### 获取微信号
+    -   获取方式详见 __获取微信号__
 
 -   执行 `npm run build`
 -   复制以下到 `/ToMsg/input/JSON/db-android`
