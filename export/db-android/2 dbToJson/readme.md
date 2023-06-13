@@ -40,7 +40,7 @@
 #### Message
 
 `.\lib\decodeMessageTable` <br/>
-由于本人不懂 `java` ，所以是让别人写的 @tzh，需求也没提太多，就是导出 `message` 整表并解密某些字段 <br/>
+由于本人不懂 `java` ，所以是让别人写的 @tzh，需求也没提太多，就是导出 `message` 并解密某些字段 <br/>
 会输出 `message.json`, BLOB 文件夹里面是不知道如何解析的文件,通过 Utf-8 编码写入文本. 应该需要从 buffer 16 进制去分析解码 <br/>
 
 -   `lvbuff` 字段不知道怎么解码,仅已知下列情况可用
