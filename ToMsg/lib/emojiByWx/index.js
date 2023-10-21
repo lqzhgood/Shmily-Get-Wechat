@@ -27,11 +27,11 @@ const parkGroup = []
         EmojiGroupInfo.map((v) => _.pick(v, ["productID", "packName"])),
         EmotionDetailInfo.map((v) => _.pick(v, ["productID", "packName"]))
     )
+    .filter((v) => v.packName);
     .map((v) => {
         v.packName = v.packName.replaceAll("\b", "").trim();
         return v;
     })
-    .filter((v) => v.packName);
 
 const emojiParkGroup = _(parkGroup).uniqBy("productID").value();
 
