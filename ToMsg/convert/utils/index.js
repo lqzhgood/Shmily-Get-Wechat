@@ -14,7 +14,7 @@ function xmlToJSON(source, _xml = '') {
 
     if (xml.startsWith('wxid_')) {
         // 会有  wxid_1234567890:<?xml version="1.0"?> 开头的情况
-        xml = xml.split(':')[1];
+        xml = xml.split(':')[1].trim();
     }
 
     const json = xml2json.toJson(xml, {
