@@ -12,9 +12,12 @@ function xmlToJSON(source, _xml = '') {
 
     if (!xml) xml = _xml;
 
-    if (xml.startsWith('wxid_')) {
-        // 会有  wxid_1234567890:\n<?xml version="1.0"?> 开头的情况
-        xml = xml.replace(/^wxid_.+\n/, '');
+    // https://github.com/lqzhgood/Shmily-Get-Wechat/issues/5
+    // 群聊  "talker": "xxxxx@chatroom", content格式为  xxxx:\n<xml.... 为第一行开头
+
+    // 如果开头不是 < 且 第一行结尾是 : 那么过滤掉第一行
+    if (/^[^\<].+:\n/.test(xml)){
+        xml = xml.replace(/^[^\<].+:\n/, '');
     }
 
     const json = xml2json.toJson(xml, {
