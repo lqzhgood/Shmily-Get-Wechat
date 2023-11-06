@@ -7,7 +7,7 @@ const { xmlToJSON } = require('../utils');
 const { TYPE_DICT } = require('../dictMap');
 
 const source = SOURCE_DICT_DB_ANDROID;
-
+const unknown = require('./type/_unknown.js');
 function typeMap(v) {
     switch (v.type + '') {
         case '1':
@@ -38,6 +38,10 @@ function typeMap(v) {
             return {
                 type: TYPE_DICT.视频,
             };
+        case '64':
+            return {
+                type: TYPE_DICT._消息_群聊_发起语音通话,
+            };
         case '47':
             return {
                 type: TYPE_DICT._自定义表情_微信买的表情,
@@ -58,6 +62,16 @@ function typeMap(v) {
         case '10000':
             return {
                 type: TYPE_DICT.系统消息,
+            };
+        case '570425393':
+            v.content = xmlToJSON(source, v.content || '');
+            return {
+                type: TYPE_DICT._系统消息_群聊_入群消息,
+            };
+        case '587202609':
+            v.content = xmlToJSON(source, v.content || '');
+            return {
+                type: TYPE_DICT._小程序_群聊,
             };
 
         case '419430449':
@@ -105,6 +119,8 @@ function linkTypeMap(v) {
     const appmsg = _.get(v, 'content.msg.appmsg', {});
     const { type: linkType } = appmsg;
 
+    // 24 54  19 51
+
     switch (linkType + '') {
         // case "1":
         //     return {
@@ -115,12 +131,17 @@ function linkTypeMap(v) {
         //         type: TYPE_DICT.微信运动,
 
         //     };
-        // case "3":
+        case '3':
         case '4':
         case '5':
             return {
                 type: TYPE_DICT.分享,
             };
+        // case '51': {
+        //     return {
+        //         type: TYPE_DICT._分享_群聊,
+        //     };
+        // }
         case '6':
             return {
                 type: TYPE_DICT.文件,
@@ -155,7 +176,7 @@ function linkTypeMap(v) {
         //         type: TYPE_DICT.红包,
         //     };
         default:
-            console.warn(`unknown Type By 49`, linkType, v);
+            console.warn('❌', `unknown Type By 49`, linkType, v);
             // throw new Error(`unknown Type By 49`);
             return {
                 type: TYPE_DICT.未知类型,

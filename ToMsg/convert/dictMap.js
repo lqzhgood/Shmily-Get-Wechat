@@ -1,3 +1,4 @@
+/* eslint-disable */
 module.exports = {
     SOURCE_DICT_DB_ANDROID: 'android',
     EXT_IMAGE: ['.jpg', '.jpeg', '.gif', '.png', '.webp'],
@@ -5,6 +6,7 @@ module.exports = {
     TYPE_DICT: [
         '消息',
         '_含链接消息',
+        '_消息_群聊_发起语音通话',
 
         '图片',
         '语音',
@@ -14,12 +16,15 @@ module.exports = {
         '位置',
         '视频通话',
         '系统消息',
+        '_系统消息_群聊_入群消息',
         '微信运动',
         '分享',
+        '_分享_群聊', // 我这里显示的 title 都是  当前微信版本不支持展示该内容，请升级至最新版本。
         '文件',
         '位置共享',
         '聊天记录',
         '小程序',
+        '_小程序_群聊',
         '转账',
         '红包',
 

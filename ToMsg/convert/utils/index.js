@@ -8,17 +8,11 @@ const { emptyObjectToString } = require('../../utils/index.js');
 
 function xmlToJSON(source, _xml = '') {
     if (_.isPlainObject(_xml)) return _xml;
-    let xml;
 
-    if (!xml) xml = _xml;
+    // 总有一些奇怪的字符 需要替换掉
+    let xml = _xml.replaceAll('<![CDATA[\b]]>', '<![CDATA[]]>');
 
-    // https://github.com/lqzhgood/Shmily-Get-Wechat/issues/5
-    // 群聊  "talker": "xxxxx@chatroom", content格式为  xxxx:\n<xml.... 为第一行开头
-
-    // 如果开头不是 < 且 第一行结尾是 : 那么过滤掉第一行
-    if (/^[^\<].+:\n/.test(xml)){
-        xml = xml.replace(/^[^\<].+:\n/, '');
-    }
+    // console.log('xml', xml);
 
     const json = xml2json.toJson(xml, {
         object: true,
