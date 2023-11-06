@@ -12,12 +12,7 @@
     -   获取方式详见 __获取微信号__
 
 -   执行 `npm run build`
--   复制以下到 `/ToMsg/input/JSON/db-android`
-    - `dist`
-        - `BLOB`
-        - `db-android_msg_res.json`
-        - `emoji_key.txt`
-        - `ImgInfo2.json`
+-   复制 `dist`内容到 `/ToMsg/input/JSON/db-android` 目录中
      
 
 #### 获取微信号
