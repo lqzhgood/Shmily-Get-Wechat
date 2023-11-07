@@ -21,9 +21,12 @@ const TYPE_EMOJI_STORE = require('./emoji_store.js');
 const TYPE_EMOJI_SELF = require('./emoji._self.js');
 const TYPE_APP = require('./app.js');
 const TYPE_SHARE = require('./share.js');
+const TYPE_SHARE_VIDEO = require('./shareVideo.js');
+const TYPE_VIDEO_CHANNEL = require('./videoChannel.js');
 const TYPE_SYSTEM = require('./system.js');
 const TYPE_USER_CARD = require('./userCard.js');
 const TYPE_LOCATION = require('./location.js');
+const TYPE_COLLECT = require('./collect.js');
 
 const TYPE_GROUP_SYSTEM = require('./group/system.js');
 
@@ -61,6 +64,7 @@ async function handleType(type, v, ov, merger) {
         case TYPE_DICT.消息:
         case TYPE_DICT._消息_群聊_发起语音通话:
             return {
+                type: TYPE_DICT.消息,
                 html: TYPE_TEXT(v.content),
             };
         case TYPE_DICT.图片:
@@ -166,6 +170,24 @@ async function handleType(type, v, ov, merger) {
                 html: `<h4>${title}</h4><p>${des}</p>`,
             };
         }
+        case TYPE_DICT._分享_视频: {
+            const data = await TYPE_SHARE_VIDEO(v);
+            Object.assign(merger.data, data);
+
+            return {
+                type: TYPE_DICT.分享,
+                html: `<h4>${data.sourcedisplayname}</h4><p>${data.title}</p>`,
+            };
+        }
+        case TYPE_DICT.视频号:
+        case TYPE_DICT._视频号_群聊: {
+            const data = await TYPE_VIDEO_CHANNEL(v);
+            Object.assign(merger.data, data);
+            return {
+                type: TYPE_DICT.视频号,
+                html: `<h4>${data.nickname}</h4><p>${data.desc}</p>`,
+            };
+        }
         case TYPE_DICT.文件: {
             merger.data.appmsg = appmsg;
             merger.data.appinfo = v.content.msg.appinfo;
@@ -220,6 +242,13 @@ async function handleType(type, v, ov, merger) {
             const paySenderTitle = _.get(appmsg, 'wcpayinfo.sendertitle');
             return {
                 html: `<h4>${paySenderTitle}</h4>`,
+            };
+        }
+        case TYPE_DICT.收藏: {
+            const data = await TYPE_COLLECT(v);
+            Object.assign(merger.data, data);
+            return {
+                html: `<h4>${data.info}</h4><div>${data.desc}</div>`,
             };
         }
         default:

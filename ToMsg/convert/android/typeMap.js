@@ -107,7 +107,7 @@ function typeMap(v) {
             };
 
         default:
-            console.warn(`unknown Type`, v.type, v);
+            console.error(`unknown Type`, v.type, v);
             // throw new Error(`unknown Type`);
             return {
                 type: TYPE_DICT.未知类型,
@@ -118,8 +118,6 @@ function typeMap(v) {
 function linkTypeMap(v) {
     const appmsg = _.get(v, 'content.msg.appmsg', {});
     const { type: linkType } = appmsg;
-
-    // 24 54  19 51
 
     switch (linkType + '') {
         // case "1":
@@ -137,11 +135,10 @@ function linkTypeMap(v) {
             return {
                 type: TYPE_DICT.分享,
             };
-        // case '51': {
-        //     return {
-        //         type: TYPE_DICT._分享_群聊,
-        //     };
-        // }
+        case '51':
+            return {
+                type: TYPE_DICT._视频号_群聊,
+            };
         case '6':
             return {
                 type: TYPE_DICT.文件,
@@ -159,11 +156,20 @@ function linkTypeMap(v) {
             return {
                 type: TYPE_DICT.聊天记录,
             };
+        case '24':
+            appmsg.recorditem = xmlToJSON(source, appmsg.recorditem || '');
+            return {
+                type: TYPE_DICT.收藏,
+            };
         case '7':
         case '33':
         case '36':
             return {
                 type: TYPE_DICT.小程序,
+            };
+        case '54':
+            return {
+                type: TYPE_DICT._分享_视频,
             };
 
         // case "2000":
@@ -176,7 +182,7 @@ function linkTypeMap(v) {
         //         type: TYPE_DICT.红包,
         //     };
         default:
-            console.warn('❌', `unknown Type By 49`, linkType, v);
+            console.error('❌', `unknown Type By 49`, linkType, v);
             // throw new Error(`unknown Type By 49`);
             return {
                 type: TYPE_DICT.未知类型,

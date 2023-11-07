@@ -109,7 +109,7 @@ async function emoji(v, merger) {
     }
 
     if (!webUrl) {
-        console.warn(
+        console.error(
             '没有匹配到表情 请手动下载',
             new Date(v.createTime * 1).toLocaleString(),
             md5s.filter(m => m),

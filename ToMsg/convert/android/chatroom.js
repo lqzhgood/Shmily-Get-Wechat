@@ -1,3 +1,4 @@
+const fs = require('fs');
 const ContactDb = require('../../input/JSON/android/rcontact.json');
 
 /**
@@ -24,7 +25,8 @@ function chatroomNormalHandler(v) {
 
     const { $name, rcontact } = findChatroomSenderInfo(contentId);
     if (!rcontact) {
-        console.log('unknow namenamenamenamenamename', v);
+        // 貌似100%存在, 暂未发现有 contentId 但数据库中无 record 的现象
+        fs.writeFileSync('./has_contentId_not_found_rcontact_in_db`.json', JSON.stringify({ v, contentId }, null, 4));
     }
 
     const o = {
