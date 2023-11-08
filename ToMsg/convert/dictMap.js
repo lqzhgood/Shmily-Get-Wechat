@@ -3,11 +3,11 @@ module.exports = {
     SOURCE_DICT_DB_ANDROID: 'android',
     EXT_IMAGE: ['.jpg', '.jpeg', '.gif', '.png', '.webp'],
     // _开头是需要处理合并为上面类型的
+    // prettier-ignore
     TYPE_DICT: [
         '消息',
         '_含链接消息',
-        '_消息_群聊_发起语音通话',
-
+        '_消息_发起语音通话',
         '图片',
         '语音',
         '撤回',
@@ -30,12 +30,10 @@ module.exports = {
         '转账',
         '红包',
         '收藏',
-
         '自定义表情',
         '_自定义表情_微信买的表情',
         '_自定义表情_非微信商店',
-
-        '未知类型',
+        '未知类型'
     ].reduce((pre, cV) => {
         pre[cV] = cV;
         return pre;

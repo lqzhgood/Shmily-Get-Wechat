@@ -16,8 +16,13 @@ function system(v) {
                         break;
                     }
                     case 'link_profile': {
-                        const { username, nickname } = cV.memberlist.member;
-                        value = nickname || username;
+                        let member = cV.memberlist.member;
+                        if (!Array.isArray(member)) {
+                            member = [member];
+                        }
+
+                        value = member.map(({ username, nickname }) => nickname || username).join(',');
+
                         break;
                     }
                     case 'link_revoke': {

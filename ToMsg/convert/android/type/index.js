@@ -62,7 +62,10 @@ async function handleType(type, v, ov, merger) {
 
     switch (type) {
         case TYPE_DICT.消息:
-        case TYPE_DICT._消息_群聊_发起语音通话:
+        case TYPE_DICT._消息_发起语音通话:
+            if (type === TYPE_DICT._消息_发起语音通话) {
+                merger.type = TYPE_DICT._消息_发起语音通话;
+            }
             return {
                 type: TYPE_DICT.消息,
                 html: TYPE_TEXT(v.content),
@@ -80,7 +83,7 @@ async function handleType(type, v, ov, merger) {
             const mp3Info = await TYPE_VOICE2(v, merger);
             merger.data.$mp3Info = mp3Info;
             return {
-                html: `${mp3Info.time / 1000}s ${mp3Info.mp3Url}`,
+                html: `${mp3Info.time / 1000}s ${mp3Info.mp3Url || ''}`,
             };
         }
         case TYPE_DICT.撤回:
@@ -142,6 +145,7 @@ async function handleType(type, v, ov, merger) {
         }
         case TYPE_DICT._系统消息_群聊_入群消息: {
             const html = TYPE_GROUP_SYSTEM(v);
+            merger.type = TYPE_DICT._系统消息_群聊_入群消息;
             return {
                 type: TYPE_DICT.系统消息,
                 html,

@@ -39,8 +39,9 @@ function typeMap(v) {
                 type: TYPE_DICT.视频,
             };
         case '64':
+            // 当前样本是在群聊中
             return {
-                type: TYPE_DICT._消息_群聊_发起语音通话,
+                type: TYPE_DICT._消息_发起语音通话,
             };
         case '47':
             return {
