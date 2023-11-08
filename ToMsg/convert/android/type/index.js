@@ -171,6 +171,7 @@ async function handleType(type, v, ov, merger) {
             };
         }
         case TYPE_DICT._分享_视频: {
+            merger.type = TYPE_DICT._分享_视频;
             const data = await TYPE_SHARE_VIDEO(v);
             Object.assign(merger.data, data);
 
