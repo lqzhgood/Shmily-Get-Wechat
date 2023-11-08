@@ -35,3 +35,4 @@ require('./type/app')(db);
 require('./type/videoinfo2')(db);
 require('./type/voiceinfo')(db);
 require('./type/rcontact')(db);
+require('./type/chatroom')(db);
