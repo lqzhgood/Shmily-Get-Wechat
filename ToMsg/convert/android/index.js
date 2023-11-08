@@ -42,8 +42,8 @@ async function androidToMsg(_res) {
 
         let chatroom = {};
         // 某些消息的 content 放到 typeMap 中去处理
-        if (!['47'].some(t => t === v.type)) {
-            chatroomNormalHandler(preData);
+        if (!['47'].some(t => t === v.type.toString())) {
+            chatroom = chatroomNormalHandler(preData);
         }
 
         // 这里还会对资源进行下载 修改 HTML 中的路径未下载的本地路径
@@ -136,6 +136,12 @@ async function androidToMsg(_res) {
             msg.content = `群发言 ${$name}:\n` + msg.content;
             // html 挪到 Show 中统一处理
         }
+
+        // 务必放到最后,这样让 类型标识符在第一行
+        if (msg.$Wechat.type) {
+            msg.content = `[${msg.$Wechat.type}]\n` + msg.content;
+        }
+        merger.type = TYPE_DICT._分享_视频;
 
         // console.log(msg.type);
         // console.log(msg.content);

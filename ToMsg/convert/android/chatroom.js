@@ -53,7 +53,7 @@ function findChatroomSenderInfo(contentId) {
         // 压缩 数组 [1,2,3] -> '1,2,3'
         rcontact.lvbuff.data = rcontact.lvbuff.data.join(',');
     }
-    const $name = rcontact.conRemark || rcontact.nickname || rcontact.alias || rcontact.username;
+    const $name = rcontact.conRemark || rcontact.nickname || rcontact.alias || rcontact.username || contentId;
 
     return { $name, rcontact, contentId };
 }
