@@ -106,6 +106,11 @@ function typeMap(v) {
             return {
                 type: TYPE_DICT.位置共享,
             };
+        case '754974769':
+            v.content = xmlToJSON(source, v.content || '');
+            return {
+                type: TYPE_DICT.视频号,
+            };
 
         default:
             console.error(`unknown Type`, v.type, v);
