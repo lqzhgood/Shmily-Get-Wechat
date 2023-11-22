@@ -4,7 +4,7 @@
 -   确认 `D:/wxDb/EnMicroMsg.db` 存在
 -   执行 `docker run -e DB_KEY=${yourkey} -v D:/wxDb:/app --rm lqzhgood/decode-wechat-db`
 
-        > ! 注意 会删除 D:/wxDb/ 中以下文件
+        > ! 注意 重复执行会删除 D:/wxDb/ 中以下文件
 
         - decrypted_database.db
         - decrypted_database.db-journal
