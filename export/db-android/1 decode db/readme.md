@@ -1,18 +1,6 @@
 # 导出数据库
-
-## 整体流程
-
-1 获取数据库
-
-2 获取数据库密钥 key
-
-3 解密数据库
-
-```
-MIUI 可以看这个帖子 https://github.com/Heyxk/notes/issues/1
-```
-
-## 0. 前期准备
+ 
+## 前期准备 
 
 本次需要获取 `/data/data/com.tencent.mm` 下的数据，此目录为系统保护目录
 
@@ -31,73 +19,92 @@ MIUI 可以看这个帖子 https://github.com/Heyxk/notes/issues/1
 
         -   电脑上安装 安卓模拟器
 
-## 1. 获取数据库
 
-微信数据库位于 `/data/data/com.tencent.mm/MicroMsg/[weixin_name]/EnMicroMsg.db`
+> 更多从 Android 复制文件到电脑可以参考 http://lqzhgood.github.io/Shmily/guide/setup-runtime/Android-copy.html
 
-## 2. 获取数据库密钥 key
 
-根据前人的分析，微信数据库 EnMicroMsg.db 的密码是由 MD5(IMEI + uin).substring(0, 7).toLowerCase() 生成的。因此，我们需要找到 IMEI 和 uin 值
+ 
+## 使用
 
-### 2.1 自动获取 key
+1. 微信数据库位于 `/data/data/com.tencent.mm/MicroMsg/[weixin_name]/EnMicroMsg.db`, 将此文件复制到电脑上
+2. 获取数据库密钥 `key`
+   
+    > 提供以下几种方式, 按需选择, 如果失败, 可以尝试其他方式
+   
+   <details> <summary>[ 推荐 ] 自动获取最后一次登录微信用户的 <code>key</code> </summary>
+         
+     1. 复制 `/data/data/com.tencent.mm/MicroMsg/` 下的 `systemInfo.cfg` 和 `CompatibleInfo.cfg` 文件
+     2. 拷贝到 `autoDecryption` 目录下
+     3. 执行 `autoDecryption.exe systemInfo.cfg CompatibleInfo.cfg`
+     4. 得到最后一次登录微信用户的 `key`
+        
+   </details>
 
-将 `/data/data/com.tencent.mm/MicroMsg/` 下的 `systemInfo.cfg` `CompatibleInfo.cfg` 拷贝到 `autoDecryption` 下执行 `autoDecryption.exe systemInfo.cfg CompatibleInfo.cfg`
-将会解密出最后一次登录微信用户的秘钥
+   <details> <summary>手动计算 <code>key</code> </summary>
+       
+      1. 获取 `IMEI` 
+  
+         <details> 
+         
+            -   我们也可以在 `/data/data/com.tencent.mm/shared_prefs/DENGTA_META.xml` 中查找名为 `IMEI_DENGTA` 的值。
+            -   手机输入 `*#06#` 可得， 如果双卡手机，两个都可以尝试
+            -   如果微信迁移过，也可以试试以前旧手机的 `IMEI`, 获取如上一条
+            -   当微信无法获取 `IMEI`, 将使用默认值 `1234567890ABCDEF` | [来源](https://github.com/WANZIzZ/WeChatRecord/issues/7#issuecomment-695331151)
+              
+         </details>
 
-### 2.2 手动获取 key
 
-#### 2.2.1 获取 IMEI
+      2. 获取 `uni`
+  
+         - 我们可以在 `/data/data/com.tencent.mm/shared_prefs/system_config_prefs.xml` 找到 `default_uin`，后面的数字就是我们要找的 `uin` 了。
 
-有以下几种方式获取
+      3. 通过 `IMEI` 和 `uni`计算出 `key`
+         <br/>
 
--   我们也可以在 /data/data/com.tencent.mm/shared_prefs/DENGTA_META.xml 中查找名为 IMEI_DENGTA 的值。
--   手机输入 \*#06# 可得， 如果双卡手机，两个都可以尝试
--   如果微信迁移过，也可以试试以前旧手机的 IMEI, 获取如上一条
--   默认值 `1234567890ABCDEF`, 当无法获取 IMEI 将使用这个[默认值](https://github.com/WANZIzZ/WeChatRecord/issues/7#issuecomment-695331151)
+         > 微信数据库 EnMicroMsg.db 的密码算法为 `key = MD5(IMEI + uin).substring(0, 7).toLowerCase()`
 
-> 将 IMEI 中的字母转为大写
+         打开 `xxxx`, 填入 `IMEI` 和 `uni` 计算出 `key`
 
-#### 2.2.2 获取 uin
+3. 使用 `key` 解密数据库
 
--   我们可以在 /data/data/com.tencent.mm/shared_prefs/system_config_prefs.xml 找到 default_uin，后面的数字就是我们要找的 uin 了。
+   > 提供以下几种方式, 按需选择, 如果失败, 可以尝试其他方式 
+   
+   <details> 
+     <summary>[ 推荐 ] 🎞️ 使用 <code>docker</code> 自动解密</summary>
+  
+     文档位于 [\export\db-android\1 decode db\docker\readme.md](https://github.com/lqzhgood/Shmily-Get-Wechat/tree/main/export/db-android/1%20decode%20db/docker)
 
-#### 2.2.3 生成 key
+   </details>
+       
+   <details> <summary>手动解密</summary>
+ 
+    折腾后已知最简单的平台是 `ubuntu 20`. 尝试过 `CentOs` / `Windows` 下 sqlcipher 的依赖太难搞了
+    
+    ```
+    sudo apt-get update
+    sudo apt-get install sqlcipher
+    ```
+    
+    替换以下命令中 `${yourkey}` 为 **2** 中获取的 key
+    
+    ```
+    sqlcipher EnMicroMsg.db 'PRAGMA key = "${yourkey}"; PRAGMA cipher_use_hmac = off; PRAGMA kdf_iter = 4000; ATTACH DATABASE "decrypted_database.db" AS decrypted_database KEY "";SELECT sqlcipher_export("decrypted_database");DETACH DATABASE decrypted_database;'
+    ```
+   </details>
+   
+   <details> 
+     <summary>暴力破解</summary>
 
-> ${key} = MD5(IMEI + uin).substring(0, 7).toLowerCase()
+     [https://github.com/chg-hou/EnMicroMsg.db-Password-Cracker](https://github.com/chg-hou/EnMicroMsg.db-Password-Cracker)
 
--   搜索任意 `md5计算` 网站，如 `http://www.metools.info/code/c26.html`
--   填入 `${MD5}${uni}` 点击加密得到 $FULL
--   打开 Chrome/Edge 按 F12 呼出开发者工具，选择 `控制台/console`，执行 `"$FULL".substring(0, 7).toLowerCase()` 即可获取 key
-
-## 3. 解密数据库
-
-### 3.1 使用 key 解密数据库
-
-#### 3.1.1 docker
-
-参考 `\export\db-android\1 decode db\docker\readme.md`
-
-#### 3.1.2 手动方式
-
-折腾后已知最简单的平台是 `ubuntu 20`. 尝试过 `CentOs` / `Windows` 下 sqlcipher 的依赖太难搞了
-
-```
-sudo apt-get update
-sudo apt-get install sqlcipher
-```
-
-替换以下命令中 `${yourkey}` 为 **2** 中获取的 key
-
-```
-sqlcipher EnMicroMsg.db 'PRAGMA key = "${yourkey}"; PRAGMA cipher_use_hmac = off; PRAGMA kdf_iter = 4000; ATTACH DATABASE "decrypted_database.db" AS decrypted_database KEY "";SELECT sqlcipher_export("decrypted_database");DETACH DATABASE decrypted_database;'
-```
-
-### 3.2 暴力破解数据库
-
-```
- https://github.com/chg-hou/EnMicroMsg.db-Password-Cracker
-```
+   </details>
 
 ## Tools
 
 ViewDB 可以查看解密后的数据库
+
+
+## 参考
+
+本文代码及过程有参考 `https://github.com/Heyxk/notes/issues/1`
+
