@@ -26,7 +26,7 @@
 
 3.  修改 `config.js`
 4.  执行 `npm run build`
-5.  复制 `dist`内容到 `/ToMsg/input/JSON/db-android` 目录中
+5.  复制 `dist`内容到 `/ToMsg/input/JSON/android` 目录中
 
 ### 说明
 
