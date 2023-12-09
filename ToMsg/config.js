@@ -1,10 +1,11 @@
 const path = require("path");
 
 const config = {
+    // Shimly 显示所用到的信息 不参与数据匹配 
     rightNum: "", // 自己的微信id
-    rightName: "", // 自己的微信名字
-    leftNum: "", // 对方的微信id
-    leftName: "", // 对方的微信名字
+    rightName: "", // 自己的微信昵称
+    leftNum: "", // 对方的微信id  
+    leftName: "", // 对方的微信昵称
 
     Device: "Phone",
 
