@@ -63,7 +63,7 @@
 
          > 微信数据库 EnMicroMsg.db 的密码算法为 `key = MD5(IMEI + uin).substring(0, 7).toLowerCase()`
 
-         打开 `xxxx`, 填入 `IMEI` 和 `uni` 计算出 `key`
+         打开 [计算工具](http://lqzhgood.github.io/Shmily/guide/tools/Wechat/calc-wechat-key.html) , 填入 `IMEI` 和 `uni` 计算出 `key`
 
 3. 使用 `key` 解密数据库
 
