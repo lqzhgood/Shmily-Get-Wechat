@@ -2,8 +2,8 @@
 
 根据不同来源导出为 `Msg`
 
--   wxbackup 来源是 `wxbackup.imxfd.com`，!!!弃用!!!
 -   android 安卓微信数据库
+
 
 ## 使用
 
