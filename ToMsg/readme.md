@@ -16,7 +16,7 @@ https://microsoftedge.microsoft.com/addons/detail/nimnodejs-%E8%B0%83%E8%AF%95%E
 1.  `input` 目录放入相应需要文件
 
     -   JSON 
-        -   android
+        -   db-android
               > 上一步在 `\export\db-android\2 dbToJson\dist` 中生成的文件
     -   asset
           > 复制手机上 `/tencent/MicroMsg/${wechatID}/` 文件夹到此目录
