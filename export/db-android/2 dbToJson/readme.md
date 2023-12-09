@@ -5,8 +5,8 @@
 
 ### 使用
 
--   安装 node 环境 [http://lqzhgood.github.io/Shmily/guide/setup-runtime/nodejs.html]
--   从 `1 decode db` 导出 `decrypted_database.db` 复制到 `input` 下
+-   🎞️ 安装 node 环境 [http://lqzhgood.github.io/Shmily/guide/setup-runtime/nodejs.html]
+-   从 [1 decode db](https://github.com/lqzhgood/Shmily-Get-Wechat/tree/main/export/db-android/1%20decode%20db) 导出 `decrypted_database.db` 复制到 `input` 下
 -   修改 `config.js` 并填入需要导出的对方 `微信id`
 
     -   获取方式详见 __获取微信号__
