@@ -103,6 +103,8 @@ dist
 # TernJS port file
 .tern-port
 
+.history
+
 input
 /ToMsg/config.js
 /ToMsg/input/
