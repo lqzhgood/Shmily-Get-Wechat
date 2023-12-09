@@ -10,6 +10,7 @@
 ```
 建议安装 NIM(Node.js 调试管理工具) 获得更好的结果显示
 https://chrome.google.com/webstore/detail/nodejs-v8-inspector-manag/gnhhdgbaldcilmgcpfddgdbkhjohddkj
+https://microsoftedge.microsoft.com/addons/detail/nimnodejs-%E8%B0%83%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/injfmegnapmoakbmnmnecjabigpdjeme
 ```
 
 1.  `input` 目录放入相应需要文件
