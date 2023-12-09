@@ -6,6 +6,16 @@
 
 ## 使用
 
+
+0. 🎞️ 安装 node 环境 [http://lqzhgood.github.io/Shmily/guide/setup-runtime/nodejs.html]
+1. [decode db 解密数据库](https://github.com/lqzhgood/Shmily-Get-Wechat/tree/main/export/db-android/1%20decode%20db)
+2. [dbToJson 导出数据库](https://github.com/lqzhgood/Shmily-Get-Wechat/tree/main/export/db-android/2%20dbToJson)
+3. [ToMsg 转换为 `Shmily-Msg` 格式](https://github.com/lqzhgood/Shmily-Get-Wechat/tree/main/ToMsg)
+4. Tools
+    - 补充表情包名称
+
+## 目录结构
+
 ```
 - Wechat
     - export
@@ -19,13 +29,6 @@
     - Tools
         一些工具
 ```
-
-0. 安装 node 环境 [http://lqzhgood.github.io/Shmily/guide/setup-runtime/nodejs.html]
-1. decode db 解密数据库
-2. dbToJson 导出数据库为 json
-3. ToMsg 转换为 `Shmily-Msg` 格式
-4. Tools
-    - 补充表情包名称
 
 ## 其他
 
