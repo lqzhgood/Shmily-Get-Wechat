@@ -28,6 +28,10 @@
  
 ## 使用
 
+```diff
++ 🎞️ 1-3   -->   https://www.bilibili.com/video/BV1xc41117Jg/
+```
+
 1. 微信数据库位于 `/data/data/com.tencent.mm/MicroMsg/[weixin_name]/EnMicroMsg.db`, 将此文件复制到电脑上 `D:\wxDb\EnMicroMsg.db`
 2. 获取数据库密钥 `key`
    
