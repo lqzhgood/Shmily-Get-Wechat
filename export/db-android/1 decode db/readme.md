@@ -31,16 +31,7 @@
    
     > 提供以下几种方式, 按需选择, 如果失败, 可以尝试其他方式
    
-   <details> <summary>[ 推荐 ] 自动获取最后一次登录微信用户的 <code>key</code> </summary>
-         
-     1. 复制 `/data/data/com.tencent.mm/MicroMsg/` 下的 `systemInfo.cfg` 和 `CompatibleInfo.cfg` 文件
-     2. 拷贝到 `autoDecryption` 目录下
-     3. 执行 `autoDecryption.exe systemInfo.cfg CompatibleInfo.cfg`
-     4. 得到最后一次登录微信用户的 `key`
-        
-   </details>
-
-   <details> <summary>手动计算 <code>key</code> </summary>
+   <details> <summary>[ 推荐 ] 手动计算 <code>key</code> </summary>
        
       1. 获取 `IMEI` 
   
@@ -64,6 +55,17 @@
          > 微信数据库 EnMicroMsg.db 的密码算法为 `key = MD5(IMEI + uin).substring(0, 7).toLowerCase()`
 
          打开 [计算工具](http://lqzhgood.github.io/Shmily/guide/tools/Wechat/calc-wechat-key.html) , 填入 `IMEI` 和 `uni` 计算出 `key`
+
+     </details>
+
+     <details> <summary>自动获取最后一次登录微信用户的 <code>key</code> </summary>
+          
+      1. 复制 `/data/data/com.tencent.mm/MicroMsg/` 下的 `systemInfo.cfg` 和 `CompatibleInfo.cfg` 文件
+      2. 拷贝到 `autoDecryption` 目录下
+      3. 执行 `autoDecryption.exe systemInfo.cfg CompatibleInfo.cfg`
+      4. 得到最后一次登录微信用户的 `key`
+         
+    </details>
 
 3. 使用 `key` 解密数据库
 
