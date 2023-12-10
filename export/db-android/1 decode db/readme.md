@@ -28,7 +28,7 @@
  
 ## 使用
 
-1. 微信数据库位于 `/data/data/com.tencent.mm/MicroMsg/[weixin_name]/EnMicroMsg.db`, 将此文件复制到电脑上
+1. 微信数据库位于 `/data/data/com.tencent.mm/MicroMsg/[weixin_name]/EnMicroMsg.db`, 将此文件复制到电脑上 `D:\wxDb\EnMicroMsg.db`
 2. 获取数据库密钥 `key`
    
     > 提供以下几种方式, 按需选择, 如果失败, 可以尝试其他方式
