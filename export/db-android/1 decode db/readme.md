@@ -20,7 +20,9 @@
         -   电脑上安装 安卓模拟器
 
 
-> 更多从 Android 复制文件到电脑可以参考 http://lqzhgood.github.io/Shmily/guide/setup-runtime/Android-copy.html
+> 从 Android 复制文件到电脑可以参考
+> 
+> 🎞️ http://lqzhgood.github.io/Shmily/guide/setup-runtime/Android-copy.html
 
 
  
