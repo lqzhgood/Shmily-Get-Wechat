@@ -13,6 +13,11 @@ https://chrome.google.com/webstore/detail/nodejs-v8-inspector-manag/gnhhdgbaldci
 https://microsoftedge.microsoft.com/addons/detail/nimnodejs-%E8%B0%83%E8%AF%95%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/injfmegnapmoakbmnmnecjabigpdjeme
 ```
 
+
+```diff
++ 🎞️ 1-5   -->   https://www.bilibili.com/video/BV1X94y1P76m/
+```
+
 1.  `input` 目录放入相应需要文件
 
     -   JSON 
@@ -39,7 +44,15 @@ https://microsoftedge.microsoft.com/addons/detail/nimnodejs-%E8%B0%83%E8%AF%95%E
         > 你可以把认为存在于聊天记录中, 但被丢失或删除的文件放在此目录
 
 2.  修改 `config.js`
-3.  执行 2 次 `npm run android`
+    ```
+    rightNum: "", // 自己的微信id
+    rightName: "", // 自己的微信昵称
+    leftNum: "", // 对方的微信id  
+    leftName: "", // 对方的微信昵称
+
+    rootPath: "Wechat-wxId-20230101", // wxId 使用 leftNum    
+    ```
+4.  执行 2 次 `npm run android`
    
     > 由于 [表情] 字段有些是加密的 URL，无法破解，所以表情会自动匹配本地目录 `.\lib\face\` 下文件 MD5 直接进行匹配。 也会匹配已下载文件的 MD5 进行匹配。 <br/>
     > 由于至少需要全部下载完一次，才能匹配 MD5。 所以程序至少需要执行两次才能尽可能的匹配更多表情
