@@ -35,12 +35,13 @@
 
     <details> <summary>[ 推荐 ] 自动获取最后一次登录微信用户的 <code>key</code> </summary>
           
-      1. 复制 `/data/data/com.tencent.mm/MicroMsg/` 下的 `systemInfo.cfg` 和 `CompatibleInfo.cfg` 文件
-      2. 拷贝到 `autoDecryption` 目录下
-      3. 解压 `jre-1.8.7z`
-      4. 执行 `set EXE4J_JAVA_HOME=.\jre-1.8`
-      5. 执行 `autoDecryption.exe systemInfo.cfg CompatibleInfo.cfg`
-      6. 得到最后一次登录微信用户的 `key`
+      1. 登录当前微信
+      2. 复制 `/data/data/com.tencent.mm/MicroMsg/` 下的 `systemInfo.cfg` 和 `CompatibleInfo.cfg` 文件
+      3. 拷贝到 `autoDecryption` 目录下
+      4. 解压 `jre-1.8.7z`
+      5. 执行 `set EXE4J_JAVA_HOME=.\jre-1.8`
+      6. 执行 `autoDecryption.exe systemInfo.cfg CompatibleInfo.cfg`
+      7. 得到最后一次登录微信用户的 `key`
          
     </details>
     
