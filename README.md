@@ -6,6 +6,13 @@
 
 ## 使用
 
+```
+🎞️ 视频集打包
+https://space.bilibili.com/3493106888476968/channel/seriesdetail?sid=3820186
+```
+
+
+
 0. 🎞️ 安装 node 环境 [http://lqzhgood.github.io/Shmily/guide/setup-runtime/nodejs.html]
 1. 🏞️ 下载本项目 [http://lqzhgood.github.io/Shmily/guide/setup-runtime/github-down-repo.html]
 2. 🎞️ 安装依赖 [http://lqzhgood.github.io/Shmily/guide/setup-runtime/nodejs-dependencies.html]
