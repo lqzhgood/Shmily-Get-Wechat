@@ -30,16 +30,27 @@
 2. 获取数据库密钥 `key`
    
     > 提供以下几种方式, 按需选择, 如果失败, 可以尝试其他方式
-   
-   <details> <summary>[ 推荐 ] 手动计算 <code>key</code> </summary>
+
+    <details> <summary>[ 推荐 ] 自动获取最后一次登录微信用户的 <code>key</code> </summary>
+          
+      1. 复制 `/data/data/com.tencent.mm/MicroMsg/` 下的 `systemInfo.cfg` 和 `CompatibleInfo.cfg` 文件
+      2. 拷贝到 `autoDecryption` 目录下
+      3. 解压 `jre-1.8.7z`
+      4. 执行 `set EXE4J_JAVA_HOME=.\jre-1.8`
+      5. 执行 `autoDecryption.exe systemInfo.cfg CompatibleInfo.cfg`
+      6. 得到最后一次登录微信用户的 `key`
+         
+    </details>
+    
+   <details> <summary>手动计算 <code>key</code> </summary>
        
       1. 获取 `IMEI` 
   
          <details> 
          
-            -   我们也可以在 `/data/data/com.tencent.mm/shared_prefs/DENGTA_META.xml` 中查找名为 `IMEI_DENGTA` 的值。
             -   手机输入 `*#06#` 可得， 如果双卡手机，两个都可以尝试
             -   如果微信迁移过，也可以试试以前旧手机的 `IMEI`, 获取如上一条
+            -   我们也可以在 `/data/data/com.tencent.mm/shared_prefs/DENGTA_META.xml` 中查找名为 `IMEI_DENGTA` 的值。
             -   当微信无法获取 `IMEI`, 将使用默认值 `1234567890ABCDEF` | [来源](https://github.com/WANZIzZ/WeChatRecord/issues/7#issuecomment-695331151)
               
          </details>
@@ -57,15 +68,6 @@
          打开 [计算工具](http://lqzhgood.github.io/Shmily/guide/tools/Wechat/calc-wechat-key.html) , 填入 `IMEI` 和 `uni` 计算出 `key`
 
      </details>
-
-     <details> <summary>自动获取最后一次登录微信用户的 <code>key</code> </summary>
-          
-      1. 复制 `/data/data/com.tencent.mm/MicroMsg/` 下的 `systemInfo.cfg` 和 `CompatibleInfo.cfg` 文件
-      2. 拷贝到 `autoDecryption` 目录下
-      3. 执行 `autoDecryption.exe systemInfo.cfg CompatibleInfo.cfg`
-      4. 得到最后一次登录微信用户的 `key`
-         
-    </details>
 
 3. 使用 `key` 解密数据库
 
