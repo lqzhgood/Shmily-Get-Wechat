@@ -18,8 +18,8 @@ https://microsoftedge.microsoft.com/addons/detail/nimnodejs-%E8%B0%83%E8%AF%95%E
     -   JSON 
         -   android
               > 上一步在 `\export\db-android\2 dbToJson\dist` 中生成的文件
-    -   asset
-          > 复制手机上 `/tencent/MicroMsg/${wechatID}/` 文件夹到此目录
+    -   asset 
+          > 复制手机上 `/tencent/MicroMsg/${wechatID}/` 文件夹到此目录. [如何复制?](http://lqzhgood.github.io/Shmily/guide/setup-runtime/Android-copy.html)
           > 
           > 2020 年 7 月 27 日更新：新版微信（V7.0.16 及以后版本）资源文件不再保存在 `tencent/MicroMsg` 文件夹中，
           >
