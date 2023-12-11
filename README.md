@@ -21,6 +21,15 @@ https://space.bilibili.com/3493106888476968/channel/seriesdetail?sid=3820186
 5. 🎞️ [ToMsg 将数据转换为 `Shmily-Msg` 格式](https://github.com/lqzhgood/Shmily-Get-Wechat/tree/main/ToMsg)
 6. [ 可选 ] Tools
     - 补充表情包名称
+7. 结束
+```
+                           是  ---> Get   http://lqzhgood.github.io/Shmily/guide/use/get.html
+                          /  
+还需要导出其他类型的数据吗 ? 
+                          \  
+                           否  ---> Show  http://lqzhgood.github.io/Shmily/guide/use/show.html
+```
+
 
 ## 目录结构
 
