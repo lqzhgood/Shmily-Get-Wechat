@@ -14,10 +14,17 @@ function xmlToJSON(source, _xml = '') {
 
     // console.log('xml', xml);
 
-    const json = xml2json.toJson(xml, {
-        object: true,
-        trim: false,
-    });
+    let json;
+    try {
+        json = xml2json.toJson(xml, {
+            object: true,
+            trim: false,
+        });
+    } catch (error) {
+        console.log(xml);
+        throw new Error('xml结构异常')
+    }
+
     return emptyObjectToString(json);
 }
 
