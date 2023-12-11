@@ -5,3 +5,5 @@
 命名规则为 `平台-node版本-node_modules.7z`
 
 如 `win11-v18.16.0-node_modules.7z`, 代表 `Windows11` `node-v18.16.0 版本` 的项目依赖
+
+解压后需要修改 `文件夹` 名  `win11-v18.16.0-node_modules` 为 `node_modules`
