@@ -17,6 +17,15 @@ function android(buff, _key) {
     // this also equals to md5(imei)[:16]
 
     const buffArr = Array.from(buff);
+    if (buffArr.length < 1024) {
+        if (!buff.toString().startsWith('wxgf')) {
+            const f = `./emoji_special_${Date.now()}`;
+            console.log('❌', `能提交这个特例 ${f} 给我吗? 找了很久了~ 你就是那个天选之人`);
+            fs.writeFileSync(f, buff);
+        }
+
+        return buff;
+    }
     const header = Buffer.from(buffArr.splice(0, 1024));
     const body = Buffer.from(buffArr);
 
