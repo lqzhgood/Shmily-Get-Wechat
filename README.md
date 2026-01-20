@@ -2,7 +2,7 @@
 
 请先阅读 https://github.com/lqzhgood/Shmily
 
-此工具是将 Wechat 导出的通讯录转换为 `Shmily-Msg` 格式的工具
+此工具是将 Wechat 导出的聊天记录转换为 `Shmily-Msg` 格式的工具
 
 > 开发使用的版本 Android/8.0.2 iOS/8.0.29
 
